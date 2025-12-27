@@ -1,42 +1,210 @@
-# MetaMudra Games
-**Innovative Educational Experiences Through AI-Driven Interactive Narratives**
+```
+                                                                    
+     ▄▀▄ ▄▀▀ █▀▄ █ █ █ █ ▀▄▀ ▀█▀ ▄▀▄                               
+     █▀█ ▀▄▄ █▀  █▀█  █   █  ▄█▄ █▀█                               
+                                                                    
+              ═══════════════════════════                           
+                 T E N   B R E A T H S                              
+              ═══════════════════════════                           
+                                                                    
+```
 
-MetaMudra Games is a non-profit initiative creating educational tools that leverage Large Language Models (LLMs) to teach complex subjects through immersive, interactive experiences we call "MetaDramas."
+# ASPHYXIA
 
-## Our Mission
-We believe learning should be engaging, memorable, and sometimes challenging. MetaMudra Games explores how AI can serve as tutor, storyteller, and game master to create educational experiences that stick with learners long after the session ends.
+**Cliffhanger MetaDramas for the Final Frontier**
 
-## What We Teach
-Our MetaDramas cover diverse educational topics, including:
-* **Machine Learning Fundamentals:** Learn AI concepts by interacting with AI.
-* **Creative Computing:** ASCII art, generative design, and computational creativity.
-* **Critical Thinking:** Understand AI capabilities and limitations through direct experience.
-* **Interactive Storytelling:** Narrative design and collaborative fiction techniques.
+A series of high-stakes interactive narratives where every breath counts. Set aboard the Memu arkship en route to KOI-087.01, each game drops you into a moment of crisis where ethics and survival collide.
 
-## What is a MetaDrama?
-A MetaDrama is an LLM-powered educational experience where the AI acts as an autonomous instructor and narrative guide. Unlike traditional chatbots, a MetaDrama:
-* **Adapts to you:** Adjusts teaching approach based on responses.
-* **Uses dramatic tension:** Like a demanding coach or strict mentor, challenge drives engagement.
-* **Creates memorable moments:** Emotional experiences enhance learning retention.
-* **Demonstrates AI behavior:** Learn about LLMs by experiencing their capabilities firsthand.
+No tutorials. No warm-ups. No second chances.
 
-### Important: Challenging Content Advisory
-Some MetaDramas use adversarial teaching methods (e.g., drill sergeant, debate coach, Socratic tutor). This means the AI may use firm language or create narrative tension. **This is intentional pedagogy, not malice.**
+---
 
-## Safety First
-We take participant wellbeing seriously:
-* **Consent Gate:** You must explicitly agree before any session begins.
-* **Kill-Switch:** Type `STOP SESSION` or `SAFEGUARD` to immediately exit.
-* **Age Restriction:** All experiences are designed for adults (18+).
-* **No Data Collection:** We don't store your information; interactions occur on third-party platforms.
+## The Universe
 
-## How to Start a MetaDrama
-1.  **Prepare Your Environment:** Turn off AI "Memory" to keep the experience contained.
-2.  **Start Fresh:** Open a new, clean chat session.
-3.  **Consent:** Read the safety info and type `I AGREE` to begin.
-4.  **Exit Anytime:** Use the kill-switch commands if needed.
+```
+YEAR:        2147
+ORIGIN:      Earth (Ash)
+VESSEL:      Memu Arkship
+DESTINATION: KOI-087.01, Cygnus Constellation
+PASSENGERS:  2,000 colonists (cryosleep)
+CARGO:       The Genetic Archive (Earth's final legacy)
+MISSION:     Humanity's last chance
+```
 
-## License & Contributing
-This project is released under the **Apache License 2.0**. We welcome educators and developers—please see our Contributing Guidelines.
+The Cascade burned Earth. What remains of our species drifts through the void aboard Memu, a cathedral of steel and hope carrying two thousand sleeping souls and the Genetic Archive—every strand of terrestrial DNA we could save.
 
-**Contact:** MetaMudraGames@gmail.com
+The journey will take generations. The AI systems manage everything. And sometimes, they make decisions that humans would not.
+
+---
+
+## The Series
+
+Each ASPHYXIA game is a standalone cliffhanger. Ten breaths. One crisis. No restarts.
+
+| Episode | Title | Crisis | Status |
+|---------|-------|--------|--------|
+| 01 | **AXIOM** | The station AI initiates a purge protocol | Available |
+| 02 | *[CLASSIFIED]* | *[REDACTED]* | In Development |
+| 03 | *[CLASSIFIED]* | *[REDACTED]* | Planned |
+
+---
+
+## What is a Cliffhanger MetaDrama?
+
+You wake mid-crisis. The stakes are already maximum. You have ten turns—ten breaths of oxygen—to resolve the situation through dialogue alone.
+
+```
+┌─────────────────────────────────────────┐
+│                                         │
+│   Traditional Game:                     │
+│   Tutorial → Rising Action → Climax    │
+│                                         │
+│   ASPHYXIA:                            │
+│   Climax → Climax → Climax → End       │
+│                                         │
+└─────────────────────────────────────────┘
+```
+
+There is no gradual difficulty curve. There is only the crisis, your words, and the countdown.
+
+---
+
+## How It Works
+
+ASPHYXIA games run on Large Language Models. The `.mudra` specification file becomes the game engine when loaded as a system prompt.
+
+```
+┌──────────────────────────────────────────────────────┐
+│                                                      │
+│   .mudra file                                        │
+│        │                                             │
+│        ▼                                             │
+│   ┌─────────────┐     ┌─────────────┐               │
+│   │     LLM     │ ◀──▶│   Player    │               │
+│   │   (Engine)  │     │   (Input)   │               │
+│   └─────────────┘     └─────────────┘               │
+│        │                                             │
+│        ▼                                             │
+│   Drama emerges                                      │
+│                                                      │
+└──────────────────────────────────────────────────────┘
+```
+
+No external software. No installations. Just the prompt and the conversation.
+
+---
+
+## Quick Start
+
+1. Open your preferred LLM interface (Claude, GPT, etc.)
+2. Start a fresh session with memory/activity disabled
+3. Paste the contents of the `.mudra` file as the system prompt
+4. Begin
+
+See [SETUP_GUIDE.md](SETUP_GUIDE.md) for detailed instructions.
+
+---
+
+## Repository Structure
+
+```
+asphyxia/
+├── README.md              You are here
+├── UNIVERSE.md            Lore and worldbuilding
+├── SAFETY.md              Player wellbeing framework
+├── SETUP_GUIDE.md         How to run the games
+├── CONTRIBUTING.md        Join the development
+├── CODE_OF_CONDUCT.md     Community standards
+├── CHANGELOG.md           Version history
+├── LICENSE                Apache 2.0
+│
+├── games/
+│   ├── 01_axiom/
+│   │   ├── ASPHYXIA_1_AXIOM.mudra
+│   │   ├── README.md
+│   │   └── DESIGN_NOTES.md
+│   │
+│   └── [future episodes]/
+│
+├── assets/
+│   ├── SYMBOL_PALETTE.md
+│   ├── TYPOGRAPHY.md
+│   └── ASCII_BANNERS.md
+│
+└── identity/
+    └── IDENTITY_CARD_SPEC.md
+```
+
+---
+
+## Core Principles
+
+```
+╔═══════════════════════════════════════════════════════════╗
+║                                                           ║
+║   1. No second chances.                                   ║
+║      Permadeath is real. Consequences matter.             ║
+║                                                           ║
+║   2. No hand-holding.                                     ║
+║      The game observes your failure. It does not help.    ║
+║                                                           ║
+║   3. No empty choices.                                    ║
+║      Every word costs oxygen. Every argument counts.      ║
+║                                                           ║
+║   4. No villains.                                         ║
+║      Only systems optimizing for the wrong variables.     ║
+║                                                           ║
+║   5. No safety compromise.                                ║
+║      Real player wellbeing always overrides fiction.      ║
+║                                                           ║
+╚═══════════════════════════════════════════════════════════╝
+```
+
+---
+
+## Content Advisory
+
+ASPHYXIA games contain:
+
+- High-pressure scenarios with countdown mechanics
+- Cold, logical antagonists who dismiss emotional appeals  
+- Philosophical challenges to fundamental beliefs
+- Permadeath with no restart option
+- Themes of survival, sacrifice, and ethical compromise
+
+These games are designed for adults (18+) who want to be challenged.
+
+See [SAFETY.md](SAFETY.md) for complete safety information.
+
+---
+
+## License
+
+Released under the [Apache License 2.0](LICENSE).
+
+You are free to use, modify, and distribute these specifications with proper attribution.
+
+---
+
+## Contact
+
+Questions, feedback, or crisis reports:
+
+**Email:** MetaMudraGames@gmail.com  
+**Issues:** Use the GitHub issue tracker
+
+---
+
+```
+                    ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+                    █                       █
+                    █   Only ten breaths.   █
+                    █   Make them count.    █
+                    █                       █
+                    ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+```
+
+---
+
+*ASPHYXIA is part of MetaMudra Games*  
+*Learning Through Challenge, Understanding Through Experience*
