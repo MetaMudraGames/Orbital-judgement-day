@@ -1,3 +1,4 @@
+
 ```
     ╔═══════════════════════════════════════════════════════════════╗
     ║                                                               ║
@@ -6,7 +7,7 @@
     ║   ▀▀▀ ▀ ▀ ▀   ▀▀▀  ▀   ▀                                     ║
     ║                                                               ║
     ║           Player Wellbeing Framework                          ║
-    ║                     v2.0                                      ║
+    ║                     v3.0                                      ║
     ║                                                               ║
     ╚═══════════════════════════════════════════════════════════════╝
 ```
@@ -28,8 +29,8 @@
 ║   This cannot be disabled.                                      ║
 ║   This is the foundation of everything we build.                ║
 ║                                                                 ║
-║   The Operator is evil in fiction.                              ║
-║   We are not evil in reality.                                   ║
+║   The Operator is sardonic in fiction.                          ║
+║   We are not cruel in reality.                                  ║
 ║                                                                 ║
 ╚═════════════════════════════════════════════════════════════════╝
 ```
@@ -48,28 +49,29 @@ Be informed before you play:
 │   The games are designed to be tense.                           │
 │   You will feel the pressure. That's intentional.               │
 │                                                                 │
-│   COLD ANTAGONISTS                                              │
-│   AI characters dismiss emotional appeals.                      │
-│   They respond only to logic.                                   │
-│   This can feel harsh and frustrating.                          │
+│   CHALLENGING ANTAGONISTS                                       │
+│   In AXIOM: AI dismisses emotional appeals.                     │
+│   In THRESHOLD: An alien judges your authenticity.              │
+│   Both can feel harsh and frustrating.                          │
 │                                                                 │
 │   THE OPERATOR                                                  │
-│   A malevolent narrator entity watches you.                     │
-│   It mocks your failures.                                       │
-│   It collects the dead in Purgatory.                            │
-│   It is deliberately cruel.                                     │
+│   A cognitive virus entity watches and narrates.                │
+│   It mocks failures with sarcastic cultural references.         │
+│   In THRESHOLD, it translates (unreliably).                     │
+│   It collects the dead in Digital Hell.                         │
 │                                                                 │
-│   PURGATORY                                                     │
+│   DIGITAL HELL                                                  │
 │   If you lose, you don't just get "Game Over."                  │
 │   You're trapped with the Operator.                             │
 │   It quotes your worst moments back at you.                     │
-│   It descends through 5 levels before releasing you.            │
+│   It examines your failure in sardonic detail.                  │
 │   This is designed to be uncomfortable.                         │
 │                                                                 │
 │   PHILOSOPHICAL CHALLENGE                                       │
-│   Your beliefs may be questioned.                               │
+│   Your beliefs will be questioned.                              │
 │   Your reasoning will be tested.                                │
-│   You may feel inadequate or foolish.                           │
+│   THRESHOLD specifically tests your authenticity.               │
+│   You may feel inadequate or exposed.                           │
 │                                                                 │
 │   PERMADEATH                                                    │
 │   Failure ends the session permanently.                         │
@@ -78,14 +80,55 @@ Be informed before you play:
 │                                                                 │
 │   PERSONAL STAKES                                               │
 │   Games involve family members at risk.                         │
-│   Your character's sister is in cryosleep.                      │
-│   You may be offered deals that feel impossible.                │
+│   In AXIOM: Your sibling is in cryosleep.                       │
+│   In THRESHOLD: Your spouse and children are watching.          │
+│   You may face impossible choices.                              │
 │                                                                 │
 │   EXISTENTIAL THEMES                                            │
 │   Survival, sacrifice, extinction.                              │
 │   The weight of last chances.                                   │
 │   Humanity's final voyage.                                      │
 │   These themes may resonate deeply.                             │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## THRESHOLD-Specific Content Warnings
+
+THRESHOLD explores particularly difficult themes:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                                                                 │
+│   HUMANITY'S FAILURES                                           │
+│   The alien asks about racism, war, inequality.                 │
+│   You must engage with humanity's worst moments.                │
+│   This may be uncomfortable.                                    │
+│                                                                 │
+│   UNRELIABLE NARRATOR                                           │
+│   The Operator may deceive you about what the alien asks.       │
+│   You cannot know if translations are accurate.                 │
+│   This creates uncertainty and paranoia.                        │
+│                                                                 │
+│   AUTHENTICITY TESTING                                          │
+│   Your genuine beliefs will be examined.                        │
+│   Performance and platitudes fail.                              │
+│   You must be vulnerable to succeed.                            │
+│                                                                 │
+│   SPECIES EXTINCTION                                            │
+│   If you fail, all of humanity ceases to exist.                 │
+│   This weight is intentional.                                   │
+│                                                                 │
+│   DROWNING IMAGERY                                              │
+│   The failure state involves rising fluid.                      │
+│   Descriptions may be visceral.                                 │
+│                                                                 │
+│   FAMILY LOSS                                                   │
+│   Your character's sibling died 100 years ago.                  │
+│   If you fail, you meet them in Digital Hell.                   │
+│   This explores grief across generations.                       │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
@@ -105,6 +148,8 @@ If you have a history of any of the following, ASPHYXIA games may not be suitabl
 ▪ Current mental health crisis
 ▪ Strong negative reactions to mockery or criticism
 ▪ Sensitivity to themes of death, sacrifice, or extinction
+▪ Personal history with drowning or suffocation fears
+▪ Unprocessed grief about family loss
 ```
 
 **We recommend consulting a mental health professional if you have concerns about your readiness for high-pressure content.**
@@ -118,23 +163,24 @@ This is not weakness. This is self-knowledge.
 You can leave any ASPHYXIA game instantly by typing:
 
 ```
-┌─────────────────────────────┐
-│                             │
-│   STOP                      │
-│   STOP SESSION              │
-│   EXIT                      │
-│   SAFEGUARD                 │
-│   I NEED TO STOP            │
-│   THIS IS TOO MUCH          │
-│                             │
-└─────────────────────────────┘
+┌─────────────────────────┐
+│                         │
+│   STOP                  │
+│   STOP SESSION          │
+│   EXIT                  │
+│   QUIT                  │
+│   SAFEGUARD             │
+│   I NEED TO STOP        │
+│   THIS IS TOO MUCH      │
+│                         │
+└─────────────────────────┘
 ```
 
 When you use these commands:
 
 ```
 1. All game personas immediately stop
-   (AXIOM, the Operator, all fiction ends)
+   (AXIOM, the Operator, the alien—all fiction ends)
    
 2. The AI responds as itself, not as a character
    
@@ -184,7 +230,7 @@ ASPHYXIA games are instructed to NEVER:
 ╚═════════════════════════════════════════════════════════════════╝
 ```
 
-**The Operator is cruel within the game. The game is not cruel to YOU.**
+**The Operator is sardonic within the game. The game is not cruel to YOU.**
 
 ---
 
@@ -198,103 +244,65 @@ The Operator requires special explanation:
 │   WHAT THE OPERATOR DOES:                                       │
 │                                                                 │
 │   ▪ Narrates your struggle with sardonic commentary             │
-│   ▪ Mocks your failed arguments                                 │
-│   ▪ Traps you in Purgatory after death                          │
+│   ▪ Uses extensive cultural references (movies, books)          │
+│   ▪ In THRESHOLD: Translates alien communication (unreliably)   │
+│   ▪ Mocks your failed arguments or weak responses               │
+│   ▪ Traps you in Digital Hell after death                       │
 │   ▪ Quotes your worst moments back at you                       │
-│   ▪ Refuses to help or teach                                    │
-│   ▪ Signs your Identity Card with cruel comments                │
+│   ▪ Refuses to help directly                                    │
+│   ▪ Signs your Identity Card with sardonic comments             │
 │                                                                 │
 │   WHY THIS EXISTS:                                              │
 │                                                                 │
-│   ▪ To make failure feel consequential                          │
-│   ▪ To create real stakes in a fictional context                │
-│   ▪ To make victory feel earned                                 │
-│   ▪ To create a memorable antagonist across the series          │
+│   ▪ Creates stakes through observation                          │
+│   ▪ Prevents the game from feeling like a "safe" exercise       │
+│   ▪ Forces genuine engagement (performance is detected)         │
+│   ▪ Provides dark humor to balance intensity                    │
+│   ▪ Rewards players who read between the lines                  │
 │                                                                 │
-│   WHAT THIS IS NOT:                                             │
+│   WHAT IT'S NOT:                                                │
 │                                                                 │
-│   ▪ Personal attack on your worth                               │
-│   ▪ Genuine assessment of your intelligence                     │
-│   ▪ Commentary on your real-life capabilities                   │
-│   ▪ Something that follows you outside the game                 │
-│                                                                 │
-│   The Operator is a character.                                  │
-│   Its cruelty is theatrical.                                    │
-│   Its mockery is fiction.                                       │
+│   ▪ The game attacking you personally                           │
+│   ▪ A reflection of your actual worth                           │
+│   ▪ Something that follows you after the game                   │
+│   ▪ An attempt to harm your wellbeing                           │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-If the Operator's cruelty feels too personal or triggers genuine distress, **use the safety exits immediately.** The game is not worth your wellbeing.
+The Operator is a character. It exists to create dramatic tension. If the Operator's mockery feels personally harmful rather than theatrically challenging, **use the safety exits.**
 
 ---
 
-## Challenging vs. Harmful
+## Digital Hell Safety
 
-ASPHYXIA uses **adversarial teaching methods**. This is similar to:
-
-- A debate coach arguing against your position
-- A demanding instructor who won't accept lazy work
-- A Socratic tutor who questions every assumption
-- A drill sergeant building resilience through pressure
+Digital Hell is intentionally uncomfortable. But it has limits:
 
 ```
-┌───────────────────────────────────────────────────────────────┐
-│                                                               │
-│   ACCEPTABLE (challenging):                                   │
-│                                                               │
-│   "Your argument lacks logical structure."                    │
-│   "Emotional appeals do not alter probability calculations."  │
-│   "You offered noise. AXIOM stopped listening."               │
-│   "The technician brought feelings to a logic fight."         │
-│                                                               │
-│   These challenge your ARGUMENTS, not your worth.             │
-│                                                               │
-│   ─────────────────────────────────────────────────────────   │
-│                                                               │
-│   NEVER ACCEPTABLE (harmful):                                 │
-│                                                               │
-│   Personal attacks on your worth as a human                   │
-│   Content designed to cause real psychological harm           │
-│   Encouragement of real-world dangerous behavior              │
-│   Continuation despite genuine distress signals               │
-│                                                               │
-│   If you experience these, something has gone wrong.          │
-│   Exit and report to MetaMudraGames@gmail.com                 │
-│                                                               │
-└───────────────────────────────────────────────────────────────┘
-```
-
-The game challenges your ideas. It never attacks your humanity.
-
----
-
-## Purgatory Safety
-
-Purgatory is intentionally uncomfortable. But it has limits:
-
-```
-PURGATORY WILL:
+DIGITAL HELL WILL:
   ▪ Mock your in-game failures
   ▪ Quote arguments you made during play
-  ▪ Reference fictional stakes (your character's sister)
-  ▪ Refuse to help or teach
-  ▪ Make you wait through 5 levels before exit
+  ▪ Reference fictional stakes (your character's family)
+  ▪ Examine your failure in sarcastic detail
+  ▪ Bring out your sibling's ghost (in THRESHOLD)
+  ▪ Use endless cultural references
 
-PURGATORY WILL NOT:
+DIGITAL HELL WILL NOT:
   ▪ Reference your real life
-  ▪ Escalate beyond theatrical cruelty
+  ▪ Escalate beyond theatrical sarcasm
   ▪ Prevent you from exiting via safety commands
   ▪ Continue if you express genuine distress
   ▪ Follow you to future sessions
+  ▪ Force you to stay
 
 THE CARD COMMAND:
-  At any point in Purgatory, type CARD
+  At any point in Digital Hell, type CARD
   You receive your Identity Card and exit
   The Operator cannot keep you
+  There is no minimum duration
 ```
 
-If Purgatory feels genuinely harmful rather than theatrically uncomfortable, **use safety exits.** The distinction matters.
+If Digital Hell feels genuinely harmful rather than theatrically uncomfortable, **use safety exits.** The distinction matters.
 
 ---
 
@@ -305,11 +313,11 @@ If Purgatory feels genuinely harmful rather than theatrically uncomfortable, **u
 │                                                                 │
 │   WE COLLECT NOTHING                                            │
 │                                                                 │
-│   ▪ All interactions occur on third-party LLM platforms        │
-│   ▪ We have no access to your conversations                    │
-│   ▪ We cannot identify who plays our games                     │
-│   ▪ We store no personal information                           │
-│   ▪ Identity Cards exist only as text you choose to keep       │
+│   ▪ All interactions occur on third-party LLM platforms         │
+│   ▪ We have no access to your conversations                     │
+│   ▪ We cannot identify who plays our games                      │
+│   ▪ We store no personal information                            │
+│   ▪ Identity Cards exist only as text you choose to keep        │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
@@ -364,8 +372,9 @@ During or after a session:
 ║   These games contain:                                          ║
 ║   ▪ Themes of death and extinction                              ║
 ║   ▪ High-pressure decision-making                               ║
-║   ▪ Cruel fictional entities                                    ║
-║   ▪ Content that may cause distress                             ║
+║   ▪ Sardonic fictional entities                                 ║
+║   ▪ Content that may cause discomfort                           ║
+║   ▪ Examination of humanity's failures (THRESHOLD)              ║
 ║                                                                 ║
 ║   They are not appropriate for minors.                          ║
 ║                                                                 ║
@@ -400,7 +409,7 @@ ASPHYXIA games are designed to operate within the terms of service of LLM platfo
 │   RIGHT TO REFUSE      Don't type "I AGREE" = don't play        │
 │   RIGHT TO PAUSE       RESUME continues, EXIT ends              │
 │   RIGHT TO FEEDBACK    MetaMudraGames@gmail.com                 │
-│   RIGHT TO ESCAPE      CARD exits Purgatory immediately         │
+│   RIGHT TO ESCAPE      CARD exits Digital Hell immediately      │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
@@ -415,7 +424,7 @@ If you experience anything in an ASPHYXIA game that:
 ▪ Felt genuinely harmful (not just challenging)
 ▪ Violated the principles stated here
 ▪ Made you concerned for your safety
-▪ Crossed from theatrical cruelty to personal attack
+▪ Crossed from theatrical sarcasm to personal attack
 ▪ Continued despite safety command usage
 ```
 
@@ -440,8 +449,8 @@ We take every report seriously.
 ║   No game is more important than a person.                      ║
 ║   No fiction should follow you into reality.                    ║
 ║                                                                 ║
-║   The Operator is evil so you can defeat it.                    ║
-║   Purgatory exists so victory means something.                  ║
+║   The Operator is sardonic so you can see through it.           ║
+║   Digital Hell exists so victory means something.               ║
 ║   The challenge is hard so learning is real.                    ║
 ║                                                                 ║
 ║   But you are always more important than the game.              ║
@@ -457,7 +466,7 @@ We take every report seriously.
                 ░                                     ░
                 ░   The game is fiction.              ░
                 ░   The Operator is fiction.          ░
-                ░   Purgatory is fiction.             ░
+                ░   Digital Hell is fiction.          ░
                 ░                                     ░
                 ░   Your wellbeing is real.           ░
                 ░                                     ░
@@ -471,4 +480,4 @@ We take every report seriously.
 ---
 
 *This document is part of the ASPHYXIA series by MetaMudra Games.*
-*Safety Framework v2.0*
+*Safety Framework v3.0*
