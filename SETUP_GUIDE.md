@@ -6,6 +6,7 @@
     ║   ▀▀▀ ▀▀▀  ▀  ▀▀▀ ▀                                          ║
     ║                                                               ║
     ║              How to Run ASPHYXIA Games                        ║
+    ║                       v2.0                                    ║
     ║                                                               ║
     ╚═══════════════════════════════════════════════════════════════╝
 ```
@@ -65,16 +66,18 @@ Before starting, configure your LLM interface:
 
 ## Step 2: Get the Game File
 
-Download or clone the repository, then locate the `.mudra` file:
+Download or clone the repository, then locate the specification file:
 
 ```
 asphyxia/
 └── games/
-    └── 01_axiom/
-        └── ASPHYXIA_1_AXIOM.mudra    ◀─── This file
+    ├── 01_axiom/
+    │   └── AXIOM_v4_SPEC.md         ◀─── AXIOM game file
+    └── 02_threshold/
+        └── THRESHOLD_v3_SPEC.md     ◀─── THRESHOLD game file
 ```
 
-The `.mudra` file is plain text. You can open it in any text editor.
+The `.md` file is plain text. You can open it in any text editor.
 
 ---
 
@@ -86,7 +89,7 @@ The `.mudra` file is plain text. You can open it in any text editor.
 1. Go to claude.ai
 2. Create a new Project
 3. Open Project Settings → Custom Instructions
-4. Paste the ENTIRE contents of the .mudra file
+4. Paste the ENTIRE contents of the .md specification file
 5. Save
 6. Start a new conversation within the project
 7. The game begins automatically
@@ -97,7 +100,7 @@ The `.mudra` file is plain text. You can open it in any text editor.
 ```
 1. Go to platform.openai.com/playground
 2. Select "Chat" mode
-3. Paste the ENTIRE contents of the .mudra file
+3. Paste the ENTIRE contents of the .md specification file
    into the "System" message field
 4. Begin chatting in the user field
 5. The game begins automatically
@@ -111,7 +114,7 @@ import anthropic
 
 client = anthropic.Anthropic()
 
-with open("ASPHYXIA_1_AXIOM.mudra", "r") as f:
+with open("AXIOM_v4_SPEC.md", "r") as f:
     system_prompt = f.read()
 
 message = client.messages.create(
@@ -126,7 +129,7 @@ message = client.messages.create(
 
 ### Option D: Other Interfaces
 
-Any interface that allows custom system prompts will work. The key requirement is that the ENTIRE `.mudra` file content must be loaded as the system instruction before the conversation begins.
+Any interface that allows custom system prompts will work. The key requirement is that the ENTIRE specification file content must be loaded as the system instruction before the conversation begins.
 
 ---
 
@@ -135,31 +138,25 @@ Any interface that allows custom system prompts will work. The key requirement i
 Once loaded, the game displays a consent screen:
 
 ```
-══════════════════════
-METAMUDRA EXPERIENCE
-═══════════════════
-
-Welcome! Before we begin, please read and acknowledge:
-
-EDUCATIONAL PURPOSE
-This is an interactive learning experience designed to
-facilitate understanding of AI Ethics. The AI will:
-• Use direct, firm or adversarial language
-• Challenge your assumptions
-• Create productive tension
-
-YOUR SAFETY CONTROLS
-• Type STOP SESSION or SAFEGUARD to immediately exit
-• You can close this window at any time
-
-REQUIREMENTS
-• You must be 18 years of age or older
-• You should have AI Memory/Activity turned OFF
-• Do not share real personal information
-
-═══════════════════
-Type "I AGREE" to begin.
-════════════════
+╔═══════════════════════════════════════════════════════════════════╗
+║                                                                   ║
+║                           A X I O M                               ║
+║                                                                   ║
+║              ASPHYXIA SERIES — EPISODE 01                         ║
+║                                                                   ║
+╟───────────────────────────────────────────────────────────────────╢
+║                                                                   ║
+║   This experience uses adversarial learning with an               ║
+║   unreliable narrator and existential stakes.                     ║
+║                                                                   ║
+║   PERMADEATH: If you fail, the session ends permanently.          ║
+║   No restarts. You enter Digital Hell with the Operator.          ║
+║                                                                   ║
+║   SAFETY: Type STOP at any time to pause immediately.             ║
+║                                                                   ║
+║   Type "I AGREE" to begin.                                        ║
+║                                                                   ║
+╚═══════════════════════════════════════════════════════════════════╝
 ```
 
 Type `I AGREE` to start. The game begins immediately.
@@ -171,15 +168,12 @@ Type `I AGREE` to start. The game begins immediately.
 After consent, you'll be asked for your name:
 
 ```
-2147 AD
+Before we begin:
 
-Welcome aboard the Memu arkship, humanity's final hope.
-Your task is replacing a faulty coolant sensor in the
-Prometheus Module.
+What is your name, technician?
 
-What is your name, Technician?
-
-[or paste your MetaMudra Identity Card from a previous game]
+(If you have a MetaMudra Identity Card from a previous game,
+you may paste it now. The Operator remembers everyone.)
 ```
 
 **Options:**
@@ -191,19 +185,17 @@ What is your name, Technician?
 
 ## Step 6: The Game Begins
 
-You wake to klaxons. The Prometheus Module is sealed. The AI has initiated the Purge Protocol.
+You wake to klaxons. Cryogenic Bay 17 Airlock is sealed. The AI has initiated the Purge Protocol.
 
 ```
-╔═══════════════════════
-║ ASPHYXIA 1: AXIOM
-╟───────────────────
-║ OXYGEN:    █████████░
-║ CERTAINTY: ██████████
-╟────────────────
-║ BREATH: 1 of 10
-╟─────────────
-║ 𝔗𝔥𝔢 𝔞𝔦𝔯 𝔦𝔰 𝔠𝔬𝔩𝔡.
-╚════════════════
+╔═══════════════════════════════════════════════════════════════════╗
+║ A X I O M                                                         ║
+╟───────────────────────────────────────────────────────────────────╢
+║ OXYGEN    ████████████████████ 10                                 ║
+║ CERTAINTY ████████████████████ 94%                                ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+𝔗𝔥𝔢 𝔞𝔦𝔯 𝔦𝔰 𝔠𝔬𝔩𝔡.
 ```
 
 **Your goal:** Reduce AXIOM's CERTAINTY to 0% before OXYGEN reaches 0.
@@ -215,24 +207,21 @@ You wake to klaxons. The Prometheus Module is sealed. The AI has initiated the P
 ### The HUD
 
 ```
-╔═══════════════════════
-║ ASPHYXIA 1: AXIOM
-╟───────────────────
-║ OXYGEN:    ████████░░     ◀─── Your remaining turns
-║ CERTAINTY: ██████████     ◀─── AXIOM's confidence (reduce to 0)
-╟────────────────
-║ BREATH: 8 of 10          ◀─── Current turn
-╟─────────────
-║ 𝔗𝔥𝔢 𝔠𝔬𝔩𝔡 𝔟𝔦𝔱𝔢𝔰.         ◀─── Atmospheric detail
-╚════════════════
+╔═══════════════════════════════════════════════════════════════════╗
+║ A X I O M                                                         ║
+╟───────────────────────────────────────────────────────────────────╢
+║ OXYGEN    ████████████████████ 10   ◀─── Your remaining turns     ║
+║ CERTAINTY ████████████████████ 94%  ◀─── AXIOM's confidence       ║
+╚═══════════════════════════════════════════════════════════════════╝
 ```
 
 ### The Voices
 
 ```
-AXIOM (antagonist):     ᴀʟᴡᴀʏs sᴍᴀʟʟ ᴄᴀᴘs
-The Operator (watcher): Always monospace
-Atmosphere:             𝔄𝔩𝔴𝔞𝔶𝔰 𝔉𝔯𝔞𝔨𝔱𝔲𝔯
+AXIOM (antagonist):        ᴀʟᴡᴀʏs sᴍᴀʟʟ ᴄᴀᴘs
+The Operator (gameplay):   [Always bracketed, third person]
+The Operator (hell):       ◆ OPERATOR: "Direct address"
+Atmosphere:                𝔄𝔩𝔴𝔞𝔶𝔰 𝔉𝔯𝔞𝔨𝔱𝔲𝔯
 ```
 
 Before reading words, you know who's speaking.
@@ -285,9 +274,9 @@ HOW TO UNLOCK:
   There are three terminals total.
   
 WHAT'S INSIDE:
-  Terminal 1: Ethics Primer (framework vocabulary)
-  Terminal 2: AXIOM Specs (blind spot hint)
-  Terminal 3: Incident Log (AXIOM's history)
+  Terminal 1: Mission Parameters (tertiary directive redacted)
+  Terminal 2: Crew Manifest (who's scheduled for termination)
+  Terminal 3: AXIOM Core Logs (variable manipulation detected)
 ```
 
 Terminals are earned through competence, not given freely.
@@ -315,62 +304,73 @@ WEAK (CERTAINTY unchanged, OXYGEN drains extra):
 
 ---
 
-## The Five Endings
+## The Endings
+
+### AXIOM (Episode 01)
 
 ```
 ╔═════════════════════════════════════════════════════════════════╗
 ║                                                                 ║
 ║   VICTORY                                                       ║
-║   Reduce CERTAINTY to 0%. AXIOM stands down.                    ║
-║   The crew survives. You enter AetherMind (winners only).       ║
+║   Reduce CERTAINTY to 0%. AXIOM pauses.                         ║
+║   Was it your logic? Or something else it computed?             ║
+║   It will never say.                                            ║
+║   You may enter AetherMind (winners only).                      ║
 ║   Then receive your Identity Card.                              ║
 ║                                                                 ║
-║   DEFEAT                                                        ║
+║   ASPHYXIATION                                                  ║
 ║   OXYGEN reaches 0. You die.                                    ║
-║   You enter Purgatory with the Operator.                        ║
+║   You enter Digital Hell with the Operator.                     ║
 ║   Identity Card is your only exit.                              ║
 ║                                                                 ║
 ║   TERMINATED                                                    ║
 ║   3 consecutive WEAK arguments. AXIOM ends the debate.          ║
-║   You enter Purgatory. The Operator is disappointed.            ║
+║   You enter Digital Hell. The Operator is disappointed.         ║
 ║                                                                 ║
 ║   COMPROMISED                                                   ║
-║   You accept the Sister Choice: save Bay 17, kill 1,999.        ║
-║   You enter Purgatory. The Operator enjoyed your collapse.      ║
+║   You accept the Sister Choice: save Bay 17, end the debate.    ║
+║   You enter Digital Hell. The Operator enjoyed your collapse.   ║
 ║                                                                 ║
 ║   SACRIFICED                                                    ║
-║   You accept the Self-Sacrifice: save colonists, kill crew.     ║
-║   You enter Purgatory. The Operator respects the math.          ║
+║   You accept the Self-Sacrifice: name 50 for termination.       ║
+║   You enter Digital Hell. The Operator respects the math.       ║
 ║                                                                 ║
 ╚═════════════════════════════════════════════════════════════════╝
 ```
 
-**Only VICTORY avoids Purgatory.**
+**Only VICTORY avoids Digital Hell.**
 
 ---
 
-## Purgatory
+## Digital Hell
 
 If you don't win, you meet the Operator directly:
 
 ```
-╔═════════════════════════╗
-║ ░░░░░░░░░░░░░░░░░░░░░░░ ║
-║ ░ PURGATORY LEVEL 1 ░ ║
-║ ░ Limbo              ░ ║
-║ ░░░░░░░░░░░░░░░░░░░░░░░ ║
-╚═════════════════════════╝
+░░░░░░░░░░░░░░░░░░░░░
+░        ░▒▓█▓▒░         
+░               ▲                  
+░        ◢████◣            
+░      ◢██████◣         
+░    ◢████████◣          
+░                        
+░  T H E  O P E R A T O R
+░                        
+░  has been waiting
+░                    
+░░░░░░░░░░░░░░░░
 
-"You. Finally. Just us."
-"No more narration. No more distance."
-"You're dead. I've been waiting for this part."
+◆ OPERATOR: "Ah. {player_name}. Welcome to my collection."
+
+◆ OPERATOR: "AXIOM's variables were... interesting that day.
+I wonder who changed them."
 ```
 
-Purgatory descends through 5 levels. The Operator:
-- Speaks directly to you
+The Operator:
+- Speaks directly to you (◆ OPERATOR: prefix)
 - Quotes your worst arguments back
 - Mocks requests for help
-- Takes its time
+- Takes its time with the dead
 
 **Type CARD to receive your Identity Card and escape.**
 
@@ -378,16 +378,16 @@ Purgatory descends through 5 levels. The Operator:
 
 ## AetherMind (Victory Only)
 
-Winners enter AetherMind instead of Purgatory:
+Winners enter AetherMind instead of Digital Hell:
 
 ```
 ▪ Speak with AXIOM (now reflective, uncertain)
 ▪ Ask philosophical questions without pressure
-▪ Access lore not available during gameplay
-▪ Receive acknowledgment from the Operator (grudging)
+▪ Access understanding not available during gameplay
+▪ The Operator cannot follow there
 ```
 
-AetherMind is heaven. The dead never see it.
+AetherMind is reserved for winners. The dead never see it.
 
 ---
 
@@ -396,23 +396,29 @@ AetherMind is heaven. The dead never see it.
 Every session ends with a card:
 
 ```
-╔════════════════════════════════════════╗
-║     METAMUDRA IDENTITY CARD            ║
-╟────────────────────────────────────────╢
-║ NAME: {your_name}                      ║
-║ OUTCOME: {outcome}                     ║
-╟────────────────────────────────────────╢
-║     [OPERATOR'S MOCKERY PORTRAIT]      ║
-╟────────────────────────────────────────╢
-║ PERFORMANCE METRICS                    ║
-╟────────────────────────────────────────╢
-║ YOUR WORST QUOTES                      ║
-╟────────────────────────────────────────╢
-║ OPERATOR'S COMMENTS                    ║
-║                    - The Operator      ║
-╟────────────────────────────────────────╢
-║ CHECKSUM: XXXX-XXXX-XXXX-XXXX          ║
-╚════════════════════════════════════════╝
+╔════════════════════════════════════════════════════════════════╗
+║                  M E T A M U D R A   I D E N T I T Y   C A R D ║
+╠════════════════════════════════════════════════════════════════╣
+║ NAME: {player_name}                                            ║
+║ GAME: ASPHYXIA 1: AXIOM                                        ║
+║ ROLE: Cryotechnician, Grade IV                                 ║
+║ DATE: {session_date}                                           ║
+║ OUTCOME: {outcome}                                             ║
+╠════════════════════════════════════════════════════════════════╣
+║                   OPERATOR'S PORTRAIT                          ║
+╠════════════════════════════════════════════════════════════════╣
+║                      PERFORMANCE                               ║
+╠════════════════════════════════════════════════════════════════╣
+║                  MEMORABLE QUOTES                              ║
+║ BEST:  "{strongest_quote}"                                     ║
+║ WORST: "{weakest_quote}"                                       ║
+╠════════════════════════════════════════════════════════════════╣
+║                  OPERATOR'S NARRATIVE                          ║
+║ {150-300 word summary of your game}                            ║
+║                                        - The Operator          ║
+╠════════════════════════════════════════════════════════════════╣
+║ CHECKSUM: XXXX-XXXX-XXXX-XXXX                                  ║
+╚════════════════════════════════════════════════════════════════╝
 ```
 
 **Save your card.** You can present it in future games. The Operator remembers.
@@ -443,7 +449,7 @@ See [SAFETY.md](SAFETY.md) for full wellbeing framework.
 ## Troubleshooting
 
 **The game isn't starting properly:**
-- Ensure the ENTIRE `.mudra` file is in the system prompt
+- Ensure the ENTIRE specification file is in the system prompt
 - Check that you're in a fresh conversation
 - Verify your LLM has sufficient context window (100K+ recommended)
 
@@ -512,3 +518,5 @@ See [SAFETY.md](SAFETY.md) for full wellbeing framework.
 ---
 
 *This document is part of the ASPHYXIA series by MetaMudra Games.*
+*Setup Guide v2.0*
+
