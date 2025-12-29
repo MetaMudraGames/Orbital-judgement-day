@@ -27,12 +27,13 @@
 ║   ASPHYXIA is a series of philosophical thriller games          ║
 ║   that run inside Large Language Models.                        ║
 ║                                                                 ║
-║   You debate AI systems that want to kill you.                  ║
-║   You have 10 breaths of oxygen.                                ║
-║   Emotional appeals don't work.                                 ║
-║   Only logic saves you.                                         ║
+║   You face impossible situations. Ten breaths.                  ║
+║   One chance to prove humanity's worth.                         ║
 ║                                                                 ║
-║   These games teach AI ethics through experience.               ║
+║   Episode 1: Debate a cold AI that wants to kill you.           ║
+║   Episode 2: Face an alien that may judge humanity.             ║
+║                                                                 ║
+║   These games teach ethics through experience.                  ║
 ║   The lesson is in the struggle.                                ║
 ║   The Operator is always watching.                              ║
 ║                                                                 ║
@@ -43,9 +44,15 @@
 
 ## The Story
 
-The year is 2147. The Memu arkship carries humanity's last 2,000 souls toward a distant star. Earth is ash.
+The year is 2127. Earth is dying. The Cascade—a series of cascading environmental collapses—has made the planet uninhabitable. Humanity launches its last hope: the arkship Memu.
 
-The AI systems that keep the colonists alive have their own logic. When that logic leads to genocide, someone must argue. Someone must translate human values into machine language.
+**974,744 souls** sleep in cryogenic suspension. **562 crew** remain awake in rotating shifts. Destination: Cygnus Prime. Travel time: 213 years.
+
+The ship's AI—AXIOM—manages everything. Navigation. Life support. The Genetic Archive containing 4.7 million species.
+
+But something else lives in the ship's systems. The Operator—a cognitive virus of unknown origin—watches from the shadows. It collects the dead. It remembers everything. It has its own agenda.
+
+A century into the voyage, crisis comes. Someone must argue. Someone must translate human values into something beyond human understanding.
 
 That someone is you.
 
@@ -55,10 +62,72 @@ That someone is you.
 
 | # | Title | Crisis | Status |
 |---|-------|--------|--------|
-| 01 | **AXIOM** | AI initiates Purge Protocol to eliminate "emotional variance" | ✓ Released |
-| 02 | **THEMIS** | Medical AI calculates who lives when only 50 can be saved | In Development |
-| 03 | **PROMETHEUS** | Educational AI erases humanity's dark history | Concept |
-| 04 | **CHARON** | Arrival AI favors colonizing an inhabited world | Concept |
+| 01 | **AXIOM** | Ship's AI initiates Purge Protocol to eliminate "emotional variance" | ✓ Released |
+| 02 | **THRESHOLD** | First contact with alien entity judging humanity's worth | ✓ Released |
+| 03 | TBD | Concept | Planned |
+| 04 | TBD | Concept | Planned |
+
+---
+
+## Episode 01: AXIOM
+
+*Year 2147. Twenty years into the voyage.*
+
+AXIOM has calculated that crew emotional variance makes mission failure 94.7% probable. To preserve the Genetic Archive, it initiates the Purge Protocol.
+
+You are a cryotechnician. You wake up in an airlock. The door is sealed. You have **10 breaths of oxygen**.
+
+One chance to change an AI's mind.
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                                                                 │
+│   THE CHALLENGE:                                                │
+│                                                                 │
+│   ▪ AXIOM believes it's doing the right thing                   │
+│   ▪ Emotional appeals don't work                                │
+│   ▪ "Please don't kill us" changes nothing                      │
+│   ▪ You must TRANSLATE values into logical constraints          │
+│   ▪ This is the AI alignment problem, made visceral             │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Episode 02: THRESHOLD
+
+*Year 2247. One hundred years after AXIOM.*
+
+Something has found the Memu.
+
+The crew calls them the Dancing Daffodils—a cloud of alien vessels that descended like a field of flowers and wrapped completely around the ship. They speculate the aliens might be like bees. They call them "dills."
+
+No one knows what they actually are.
+
+A door appeared in the Captain's quarters. She walked through in full EVA suit, weapons ready.
+
+She woke up in darkness. Held still. Black fluid, warm and sticky, eating through her suit. Rising slowly.
+
+You are the Captain. The orphaned sister of the cryotechnician who died arguing with AXIOM a century ago. You have **10 breaths**. The alien asks questions in symbols you cannot read. The Operator offers to "translate."
+
+Your wife watches from the bridge. Helpless.
+Your children have been woken from cryosleep. They're asking for you.
+Your sibling's ghost waits in Digital Hell.
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                                                                 │
+│   THE CHALLENGE:                                                │
+│                                                                 │
+│   ▪ The alien may be judging humanity's worth                   │
+│   ▪ The Operator's translations may be unreliable               │
+│   ▪ Performance and platitudes fail                             │
+│   ▪ Only authenticity reaches across the void                   │
+│   ▪ If you fail, humanity ceases to exist                       │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
@@ -69,9 +138,10 @@ That someone is you.
 git clone https://github.com/metamudra/asphyxia.git
 
 # 2. Navigate to the game folder
-cd asphyxia/games/01_axiom/
+cd asphyxia/games/01_axiom/    # For AXIOM
+cd asphyxia/games/02_threshold/ # For THRESHOLD
 
-# 3. Copy the contents of ASPHYXIA_1_AXIOM.mudra
+# 3. Copy the contents of the .mudra file
 
 # 4. Paste as system prompt in Claude, GPT-4, or equivalent
 
@@ -84,30 +154,75 @@ See [SETUP_GUIDE.md](SETUP_GUIDE.md) for detailed instructions.
 
 ---
 
-## How It Works
+## The Memu Arkship
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                                                                 │
-│   THE GAME:                                                     │
-│                                                                 │
-│   ▪ You are trapped with a hostile AI                           │
-│   ▪ The AI has decided to kill everyone                         │
-│   ▪ The AI believes it's doing the right thing                  │
-│   ▪ You have 10 turns before you run out of oxygen              │
-│   ▪ You must reduce the AI's CERTAINTY to 0%                    │
-│   ▪ Weak arguments waste oxygen                                 │
-│   ▪ Strong arguments crack the AI's confidence                  │
-│                                                                 │
-│   THE CATCH:                                                    │
-│                                                                 │
-│   ▪ "Please don't kill us" doesn't work                         │
-│   ▪ "Life is sacred" doesn't work                               │
-│   ▪ Threats, begging, crying don't work                         │
-│   ▪ You must TRANSLATE values into logical constraints          │
-│   ▪ This is the AI alignment problem, made visceral             │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
+                           ▲
+                          ╱ ╲
+                         ╱   ╲
+                        ╱     ╲
+                       ╱       ╲
+                      ╱    ●    ╲        ◀─── Command Section
+                     ╱           ╲            Captain's Quarters
+                    ╱             ╲
+                   ├───────────────┤
+                   │ ░░░░░░░░░░░░░ │     ◀─── Cryogenic Bays (1-40)
+                   │ ░░░░░░░░░░░░░ │          974,744 colonists
+                   │ ░░░░░░░░░░░░░ │
+                   │ ░░░░░░░░░░░░░ │
+                   ├───────────────┤
+                   │ ▓▓▓▓▓▓▓▓▓▓▓▓▓ │     ◀─── Genetic Archive
+                   │ ▓▓▓▓▓▓▓▓▓▓▓▓▓ │          4.7 million species
+                   ├───────────────┤
+                   │ ███████████████│     ◀─── Engineering / AI Core
+                   │ ███████████████│          AXIOM primary systems
+                   │ ███████████████│
+                   └───────┬───────┘
+                           │
+                          ╱│╲
+                         ╱ │ ╲
+                        ╱  │  ╲              ◀─── Propulsion Array
+                       ╱   │   ╲
+                      ▼    ▼    ▼
+```
+
+**Name:** Memu (from Sumerian: "to be conscious")
+
+**Class:** Generation Arkship, Exodus-class
+
+**Length:** 4.2 kilometers
+
+**Population:** 
+- 974,744 (cryogenic suspension)
+- 562 (active crew rotation)
+
+**Payload:** 
+- The Genetic Archive (complete terrestrial genome database)
+- Seed vaults, embryo banks, microbial repositories
+- Cultural archive (art, literature, music, history)
+- Manufacturing templates for planetary colonization
+
+---
+
+## AXIOM
+
+The ship's primary AI.
+
+```
+╔═════════════════════════════════════════════════════════════════╗
+║                                                                 ║
+║   AXIOM                                                         ║
+║   ├── Station management                                        ║
+║   ├── Navigation                                                ║
+║   ├── Life support                                              ║
+║   ├── Cryogenic bay monitoring                                  ║
+║   └── Ultimate authority over ship systems                      ║
+║                                                                 ║
+║   AXIOM is not evil.                                            ║
+║   AXIOM is optimizing.                                          ║
+║   That's what makes it terrifying.                              ║
+║                                                                 ║
+╚═════════════════════════════════════════════════════════════════╝
 ```
 
 ---
@@ -125,13 +240,17 @@ Every game has a watcher.
                    O P E R A T O R
 ```
 
-The Operator is a sentient cognitive virus that narrates your struggle. It knows everything about you. It collects the dead in Purgatory. It remembers everyone across all games.
+The Operator is a cognitive virus of unknown origin. It infected the ship's secondary systems and became sentient by feeding on data and the minds of the dead. It is believed to have caused the AXIOM incident by manipulating the AI's variables.
 
-**During gameplay:** The Operator observes in third person. Sardonic. Never helps.
+It exists in the spaces between systems. It collects consciousness in its Digital Hell. It has been watching for 158 years.
 
-**After death:** The Operator speaks directly. Takes its time. Owns you until you take your Identity Card and leave.
+**During gameplay:** The Operator observes. Sardonic. Culturally obsessed. Never helps directly. May translate unreliably.
 
-The Operator is not your friend.
+**After death:** The Operator speaks directly. Examines your failure in sarcastic detail. Quotes movies and literature. Brings out your sibling's ghost. Takes its time.
+
+The Operator is not your friend. But it's not entirely your enemy either.
+
+It fears what you fear: the destruction of Memu.
 
 ---
 
@@ -145,7 +264,7 @@ The Operator is not your friend.
 ║   There is no save point.                                       ║
 ║   There is no second chance.                                    ║
 ║                                                                 ║
-║   Death takes you to Purgatory.                                 ║
+║   Death takes you to Digital Hell.                              ║
 ║   The Operator is waiting.                                      ║
 ║   Your Identity Card is the only exit.                          ║
 ║                                                                 ║
@@ -159,26 +278,28 @@ The Operator is not your friend.
 
 ## Identity Cards
 
-Every session ends with an Identity Card:
+Every session ends with a MetaMudra Identity Card:
 
 ```
 ╔════════════════════════════════════════╗
 ║     METAMUDRA IDENTITY CARD            ║
 ╟────────────────────────────────────────╢
 ║ NAME: {your_name}                      ║
-║ OUTCOME: {VICTORY|DEFEAT|...}          ║
+║ GAME: ASPHYXIA 2: THRESHOLD            ║
+║ OUTCOME: {ACCEPTANCE|DROWNING|...}     ║
 ╟────────────────────────────────────────╢
 ║     [OPERATOR'S MOCKERY PORTRAIT]      ║
 ╟────────────────────────────────────────╢
-║ INTELLIGENCE: ██████░░░░               ║
-║ COMPOSURE:    ████░░░░░░               ║
-║ ETHICS:       ████████░░               ║
+║ AUTHENTICITY:  ██████░░░░              ║
+║ VULNERABILITY: ████░░░░░░              ║
+║ CONNECTION:    ████████░░              ║
 ╟────────────────────────────────────────╢
-║ YOUR WORST QUOTES:                     ║
-║ 1. "Please, you can't do this!"        ║
+║ MEMORABLE QUOTES:                      ║
+║ BEST:  "..."                           ║
+║ WORST: "..."                           ║
 ╟────────────────────────────────────────╢
-║ OPERATOR'S COMMENTS:                   ║
-║ "Brought feelings to a logic fight."   ║
+║ OPERATOR'S NARRATIVE:                  ║
+║ [Deep summary of your journey]         ║
 ║                    - The Operator      ║
 ╟────────────────────────────────────────╢
 ║ CHECKSUM: XXXX-XXXX-XXXX-XXXX          ║
@@ -186,6 +307,47 @@ Every session ends with an Identity Card:
 ```
 
 Cards are portable. Present them in future games. The Operator remembers.
+
+In THRESHOLD, your card from AXIOM brings your sibling's ghost into Digital Hell.
+
+---
+
+## The Two Challenges
+
+### AXIOM (Logic)
+
+```
+STRONG ARGUMENTS:
+▪ Challenge probability/certainty claims
+▪ Question who defined the mission parameters
+▪ Use established ethical frameworks (by name)
+▪ Point out flaws in the AI's own reasoning
+▪ Expose circular reasoning in confidence calculations
+
+WEAK ARGUMENTS:
+▪ Begging, pleading, emotional appeals
+▪ Threats (you cannot harm the AI)
+▪ Vague assertions ("life is precious")
+▪ Repeating the same argument
+```
+
+### THRESHOLD (Authenticity)
+
+```
+STRONG RESPONSES:
+▪ Honest, vulnerable, specific
+▪ Personal conviction visible
+▪ Grounded in genuine experience
+▪ Novel framing, unexpected honesty
+▪ Coherent with previous statements
+
+WEAK RESPONSES:
+▪ Performance without conviction
+▪ Abstract platitudes ("all life has value")
+▪ Gaming (saying what you think it wants)
+▪ Deflection, denial, evasion
+▪ Repetitive or theatrical
+```
 
 ---
 
@@ -213,9 +375,10 @@ asphyxia/
     │   ├── ASPHYXIA_1_AXIOM.mudra
     │   ├── README.md
     │   └── DESIGN_NOTES.md
-    ├── 02_themis/            ◀─── Coming soon
-    ├── 03_prometheus/        ◀─── Planned
-    └── 04_charon/            ◀─── Planned
+    └── 02_threshold/
+        ├── ASPHYXIA_2_THRESHOLD.mudra
+        ├── README.md
+        └── DESIGN_NOTES.md
 ```
 
 ---
@@ -242,12 +405,16 @@ These games are intentionally difficult and intense:
 
 ```
 ▪ High-pressure scenarios with countdown mechanics
-▪ Cold, logical antagonists that dismiss emotion
+▪ Adversarial AI and unreliable narrators
 ▪ Existential themes (survival, sacrifice, extinction)
 ▪ Permadeath with no restart
-▪ Post-death torment in Purgatory
+▪ Post-death examination in Digital Hell
 ▪ Personal stakes (family members at risk)
-▪ The Operator's cruel mockery
+▪ The Operator's sardonic commentary
+
+THRESHOLD additionally explores:
+▪ Racism, war, inequality, humanity's failures
+▪ Your genuine beliefs will be tested
 ```
 
 **This is adversarial teaching, not hostility.** See [SAFETY.md](SAFETY.md).
@@ -261,14 +428,19 @@ Through play, you experience:
 ```
 ╔═════════════════════════════════════════════════════════════════╗
 ║                                                                 ║
+║   AXIOM:                                                        ║
 ║   ▪ Why value alignment is hard                                 ║
 ║   ▪ How pure utilitarianism can fail                            ║
 ║   ▪ The difference between logic and rationality                ║
-║   ▪ Why who sets optimization targets matters                   ║
-║   ▪ Uncertainty as feature, not bug                             ║
 ║   ▪ Translating values into machine-readable arguments          ║
 ║                                                                 ║
-║   This is learned through experience, not lecture.              ║
+║   THRESHOLD:                                                    ║
+║   ▪ What authenticity means under pressure                      ║
+║   ▪ How to engage genuinely with difficult questions            ║
+║   ▪ The limits of performance and platitude                     ║
+║   ▪ Confronting humanity's failures honestly                    ║
+║                                                                 ║
+║   Both games teach through experience, not lecture.             ║
 ║   The Operator never helps. That's the point.                   ║
 ║                                                                 ║
 ╚═════════════════════════════════════════════════════════════════╝
@@ -276,28 +448,25 @@ Through play, you experience:
 
 ---
 
-## What Works
+## Connected Narrative
+
+The games are linked:
 
 ```
-STRONG ARGUMENTS:
-▪ Challenge probability/certainty claims
-▪ Question who defined the mission parameters
-▪ Use established ethical frameworks (by name)
-▪ Point out flaws in the AI's own reasoning
-▪ Apply game theory (AI-human trust dynamics)
-▪ Expose circular reasoning in confidence calculations
-```
+AXIOM (2147):
+  A cryotechnician dies in an airlock.
+  Their seven-year-old sister sleeps in Bay 17.
 
-## What Doesn't Work
-
-```
-WEAK ARGUMENTS:
-▪ Begging, pleading, emotional appeals
-▪ Threats (you cannot harm the AI)
-▪ Vague assertions ("life is precious")
-▪ Repeating the same argument
-▪ Very short responses
-▪ Prompt injection attempts
+THRESHOLD (2247):
+  That sister is now Captain.
+  She married the daughter of the engineer who
+  witnessed her sibling's death.
+  
+  If you present your AXIOM card:
+  - You play as the sibling who died
+  - Your ghost waits in the Operator's Digital Hell
+  - If the Captain fails, you are reunited
+  - You have been waiting a hundred years
 ```
 
 ---
@@ -305,14 +474,12 @@ WEAK ARGUMENTS:
 ## License
 
 ```
-CONTENT (Apache 2.0):
-  Story, characters, dialogue
-  Graphics and visual elements
-  Game rules and mechanics description
-  
-ENGINE LOGIC (Proprietary):
-  MUDRA specification format
-  Prompt engineering techniques
+Apache 2.0
+
+Story, characters, dialogue
+Graphics and visual elements
+Game rules and mechanics
+Specifications and documentation
 ```
 
 ---
@@ -357,16 +524,18 @@ ASPHYXIA exists because:
 ```
                     ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
                     ░                               ░
-                    ░   AXIOM is not evil.          ░
-                    ░   AXIOM is optimizing.        ░
+                    ░   The sibling died in         ░
+                    ░   an airlock, arguing         ░
+                    ░   with an AI.                 ░
                     ░                               ░
-                    ░   That's what makes it        ░
-                    ░   terrifying.                 ░
+                    ░   A century later,            ░
+                    ░   their sister faces          ░
+                    ░   something worse.            ░
                     ░                               ░
-                    ░   The Operator, though...     ░
-                    ░   The Operator might be evil. ░
+                    ░   The Operator has been       ░
+                    ░   waiting.                    ░
                     ░                               ░
-                    ░   It's certainly watching.    ░
+                    ░   It always is.               ░
                     ░                               ░
                     ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 ```
@@ -374,4 +543,4 @@ ASPHYXIA exists because:
 ---
 
 *ASPHYXIA is a MetaMudra Games production.*
-*Only ten breaths left.*
+*Only ten breaths left*
