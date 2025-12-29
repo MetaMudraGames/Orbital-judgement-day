@@ -1,9 +1,9 @@
 ```
     ╔═══════════════════════════════════════════════════════════════╗
-    ║                                                               ║
-    ║   ▀█▀ █▀▄ █▀▀ █▀█ ▀█▀ ▀█▀ ▀█▀ █ █                            ║
-    ║    █  █ █ █▀▀ █ █  █   █   █   █                             ║
-    ║   ▀▀▀ ▀▀  ▀▀▀ ▀ ▀  ▀  ▀▀▀  ▀   ▀                             ║
+    ║                                                                ║
+    ║   ▀█▀  █▀▄  █▀▀   █▀█  ▀█▀  ▀█▀  ▀█▀  █ █                            ║
+    ║    █   █ █   █▀▀   █ █   █    █     █    █                             ║
+    ║   ▀▀▀  ▀▀   ▀▀▀   ▀ ▀    ▀   ▀▀▀   ▀    ▀                             ║
     ║                                                               ║
     ║           MetaMudra Identity Card System                      ║
     ║                       v2.0                                    ║
@@ -13,7 +13,7 @@
 
 # Identity Card Specification
 
-A record of who you were when the oxygen ran out.
+A record of who you were when the game ended.
 
 ---
 
@@ -27,9 +27,9 @@ A record of who you were when the oxygen ran out.
 ║   ▪ Your performance metrics                                    ║
 ║   ▪ Your ethical reasoning patterns                             ║
 ║   ▪ Your observable traits under pressure                       ║
-║   ▪ The Operator's assessment of your failure                   ║
+║   ▪ The Operator's summary of your game                   ║
 ║   ▪ Your own words, thrown back at you                          ║
-║   ▪ A tamper-proof verification signature                       ║
+║   ▪ A tamper-proof verification signature                     ║
 ║                                                                 ║
 ║   The card is portable across MetaMudra games.                  ║
 ║   The Operator remembers everyone.                              ║
