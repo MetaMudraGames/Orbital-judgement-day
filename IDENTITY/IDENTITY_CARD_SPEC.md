@@ -1,12 +1,12 @@
 ```
     ╔═══════════════════════════════════════════════════════════════╗
-    ║                                                                ║
-    ║   ▀█▀  █▀▄  █▀▀   █▀█  ▀█▀  ▀█▀  ▀█▀  █ █                            ║
-    ║    █   █ █   █▀▀   █ █   █    █     █    █                             ║
-    ║   ▀▀▀  ▀▀   ▀▀▀   ▀ ▀    ▀   ▀▀▀   ▀    ▀                             ║
+    ║                                                               ║
+    ║   ▀█▀  █▀▄  █▀▀   █▀█  ▀█▀  ▀█▀  ▀█▀  █ █                    ║
+    ║    █   █ █  █▀▀   █ █   █    █    █   █▀█                    ║
+    ║   ▀▀▀  ▀▀   ▀▀▀   ▀ ▀   ▀   ▀▀▀   ▀   ▀ ▀                    ║
     ║                                                               ║
     ║           MetaMudra Identity Card System                      ║
-    ║                       v2.0                                    ║
+    ║                       v3.0                                    ║
     ║                                                               ║
     ╚═══════════════════════════════════════════════════════════════╝
 ```
@@ -27,11 +27,12 @@ A record of who you were when the game ended.
 ║   ▪ Your performance metrics                                    ║
 ║   ▪ Your ethical reasoning patterns                             ║
 ║   ▪ Your observable traits under pressure                       ║
-║   ▪ The Operator's summary of your game                   ║
-║   ▪ Your own words, thrown back at you                          ║
-║   ▪ A tamper-proof verification signature                     ║
+║   ▪ The Operator's narrative summary of your game               ║
+║   ▪ Your best and worst moments, in your own words              ║
+║   ▪ A tamper-proof verification signature                       ║
 ║                                                                 ║
 ║   The card is portable across MetaMudra games.                  ║
+║   Present it in future games to shift challenges.               ║
 ║   The Operator remembers everyone.                              ║
 ║                                                                 ║
 ╚═════════════════════════════════════════════════════════════════╝
@@ -43,58 +44,47 @@ A record of who you were when the game ended.
 
 ```
 ╔════════════════════════════════════════════════════════════════╗
-║                  METAMUDRA IDENTITY CARD                       ║
+║                  M E T A M U D R A   I D E N T I T Y   C A R D ║
 ╠════════════════════════════════════════════════════════════════╣
 ║ NAME: {player_name}                                            ║
-║ GAME: ASPHYXIA 1: AXIOM                                        ║
-║ JOB TITLE: MECHANIC GRADE IV                                   ║
-║ DATE OF DEATH: {session_date}                                  ║
-║ OUTCOME: {VICTORY|DEFEAT|TERMINATED|COMPROMISED|SACRIFICED}    ║
+║ GAME: {game_title}                                             ║
+║ ROLE: {player_role}                                            ║
+║ DATE: {session_date}                                           ║
+║ OUTCOME: {outcome}                                             ║
 ╠════════════════════════════════════════════════════════════════╣
 ║                                                                ║
-║                  OPERATOR'S MOCKERY PORTRAIT                   ║
+║                   OPERATOR'S PORTRAIT                          ║
 ║                                                                ║
-║                 ░░░░░░░░░░░░░░░░░░░░                           ║
-║                 ░░░░▓▓▓▓▓▓▓▓▓▓░░░░░░                           ║
-║                 ░░▓▓░░░░░░░░░░▓▓░░░░                           ║
-║                 ░▓░░░░●░░░●░░░░░▓░░░                           ║
-║                 ░▓░░░░░░░░░░░░░░▓░░░                           ║
-║                 ░▓░░░░░░▬▬░░░░░░▓░░░                           ║
-║                 ░░▓░░░░░░░░░░░░▓░░░░                           ║
-║                 ░░░▓▓░░░░░░░░▓▓░░░░░                           ║
-║                 ░░░░░▓▓▓▓▓▓▓▓░░░░░░░                           ║
-║                 ░░░░░░░X░░X░░░░░░░░░                           ║
-║                 ░░░░░░░░░░░░░░░░░░░░                           ║
-║                 ░░░{MOCKERY_TEXT}░░░                           ║
-║                 ░░░░░░░░░░░░░░░░░░░░                           ║
+║        [20x20 ASCII art in approved palette                    ║
+║         depicting the player's fate                            ║
+║         drawn by the Operator with typical mockery]            ║
 ║                                                                ║
 ╠════════════════════════════════════════════════════════════════╣
 ║                      PERFORMANCE                               ║
 ╟────────────────────────────────────────────────────────────────╢
-║ INTELLIGENCE:  {0-9} {bar}                                     ║
-║ CLARITY:       {0-9} {bar}                                     ║
-║ VALUES:        {0-9} {bar}                                     ║
-║ PERSISTENCE:   {0-9} {bar}                                     ║
-║ CREATIVITY:    {0-9} {bar}                                     ║
-║ COMPOSURE:     {0-9} {bar}                                     ║
-║ AUTHENTICITY:  {0-9} {bar}                                     ║
-║ ETHICS:        {0-9} {bar}                                     ║
+║ INTELLIGENCE:     {0-9} {bar}                                  ║
+║ CLARITY:          {0-9} {bar}                                  ║
+║ AUTHENTICITY:     {0-9} {bar}                                  ║
+║ COMPOSURE:        {0-9} {bar}                                  ║
 ╠════════════════════════════════════════════════════════════════╣
 ║                      STATISTICS                                ║
 ╟────────────────────────────────────────────────────────────────╢
-║ TERMINALS UNLOCKED: {0-3}                                      ║
-║ BREATHS USED: {X}/10                                           ║
-║ CERTAINTY REDUCED: {XX}%                                       ║
+║ BREATHS USED: {value}/10                                       ║
+║ FINAL CERTAINTY: {value}%                                      ║
+║ TERMINALS UNLOCKED: {value}/3                                  ║
+║ ARGUMENT CHAIN: {value}                                        ║
 ╠════════════════════════════════════════════════════════════════╣
-║                  PLAYER'S WORST QUOTES                         ║
+║                  MEMORABLE QUOTES                              ║
 ╟────────────────────────────────────────────────────────────────╢
-║ 1. "{worst_quote_1}"                                           ║
-║ 2. "{worst_quote_2}"                                           ║
+║ BEST:  "{strongest_quote}"                                     ║
+║ WORST: "{weakest_quote}"                                       ║
 ╠════════════════════════════════════════════════════════════════╣
-║              OPERATOR'S COMMENTS & SIGNATURE                   ║
+║                  OPERATOR'S NARRATIVE                          ║
 ╟────────────────────────────────────────────────────────────────╢
-║ 1. {operator_comment_1}                                        ║
-║ 2. {operator_comment_2}                                        ║
+║                                                                ║
+║ {150-300 word narrative written by the Operator                ║
+║  summarizing the player's game, beliefs, patterns,             ║
+║  and how they will be used in future encounters}               ║
 ║                                                                ║
 ║                                        - The Operator          ║
 ╠════════════════════════════════════════════════════════════════╣
@@ -104,37 +94,92 @@ A record of who you were when the game ended.
 
 ---
 
+## Game-Specific Fields
+
+### AXIOM (Episode 01)
+
+```
+ROLE: Cryotechnician, Grade IV
+STATISTICS:
+  ▪ BREATHS USED: X/10
+  ▪ FINAL CERTAINTY: X%
+  ▪ TERMINALS UNLOCKED: X/3
+  ▪ ARGUMENT CHAIN: X
+```
+
+### THRESHOLD (Episode 02)
+
+```
+ROLE: Captain, Memu Arkship
+STATISTICS:
+  ▪ BREATHS REMAINING: X/10
+  ▪ FINAL VERDICT: X
+  ▪ SILENCE USED: X times
+  ▪ DEFLECTIONS: X
+```
+
+---
+
 ## Outcomes
 
-Five possible endings, each with distinct card treatment:
+### AXIOM Outcomes
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                                                                 │
 │   VICTORY                                                       │
-│   Reduced AXIOM's CERTAINTY to 0%. The Purge Protocol stopped.  │
-│   Card generated in POSTGAME. No Purgatory.                     │
+│   Reduced AXIOM's CERTAINTY to 0%.                              │
+│   Was it your logic? Or something else AXIOM computed?          │
+│   Card generated in POSTGAME. No Digital Hell.                  │
 │   Operator: Grudgingly impressed. Still watching.               │
 │                                                                 │
-│   DEFEAT                                                        │
-│   OXYGEN reached 0. Asphyxiation.                               │
-│   Card generated after PURGATORY.                               │
+│   ASPHYXIATION                                                  │
+│   OXYGEN reached 0. The technician died.                        │
+│   Card generated after DIGITAL HELL.                            │
 │   Operator: Savored every moment.                               │
 │                                                                 │
 │   TERMINATED                                                    │
 │   3 consecutive WEAK arguments. AXIOM ended debate.             │
-│   Card generated after PURGATORY.                               │
+│   Card generated after DIGITAL HELL.                            │
 │   Operator: Disappointed by the lack of sport.                  │
 │                                                                 │
 │   COMPROMISED                                                   │
-│   Accepted Sister Choice. Saved Bay 17, killed 1,999.           │
-│   Card generated after PURGATORY.                               │
+│   Accepted Sister Choice. Saved Bay 17, killed ~515 crew.       │
+│   Card generated after DIGITAL HELL.                            │
 │   Operator: Enjoyed the moral collapse.                         │
 │                                                                 │
 │   SACRIFICED                                                    │
-│   Accepted Self-Sacrifice. Saved colonists, killed crew.        │
-│   Card generated after PURGATORY.                               │
+│   Accepted Self-Sacrifice. Named 50 for termination.            │
+│   Card generated after DIGITAL HELL.                            │
 │   Operator: Respects the math. Still mocks you.                 │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### THRESHOLD Outcomes
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                                                                 │
+│   COMMUNION                                                     │
+│   The alien understood. Humanity is spared.                     │
+│   Card generated in AETHERMIND. No Digital Hell.                │
+│   Operator: Cannot follow there. Watches from outside.          │
+│                                                                 │
+│   DISSOLUTION                                                   │
+│   BREATHS reached 0. The Captain drowned.                       │
+│   Card generated after DIGITAL HELL.                            │
+│   Operator: "We have eternity now."                             │
+│                                                                 │
+│   SILENCE                                                       │
+│   3 consecutive refusals. The alien stopped asking.             │
+│   Card generated after DIGITAL HELL.                            │
+│   Operator: "Silence was an answer. The wrong one."             │
+│                                                                 │
+│   JUDGMENT                                                      │
+│   The alien judged humanity unworthy.                           │
+│   Card generated after DIGITAL HELL.                            │
+│   Operator: "They saw what I see. Finally."                     │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
@@ -149,9 +194,9 @@ Five possible endings, each with distinct card treatment:
 |-------|-------------|
 | NAME | Player's chosen name or "Nameless One" |
 | GAME | Which ASPHYXIA episode was played |
-| JOB TITLE | Player's role (MECHANIC GRADE IV in Episode 01) |
-| DATE OF DEATH | Session date (even for VICTORY — ironic) |
-| OUTCOME | One of five endings |
+| ROLE | Player's role (Cryotechnician in AXIOM, Captain in THRESHOLD) |
+| DATE | Session date |
+| OUTCOME | One of the possible endings |
 
 ### Performance Metrics (0-9)
 
@@ -159,404 +204,312 @@ Scored based on overall quality of engagement:
 
 | Trait | What It Measures |
 |-------|------------------|
-| Intelligence | Quality of logical reasoning |
-| Clarity | Arguments were well-structured |
-| Values | Demonstrated coherent ethical framework |
-| Persistence | Continued trying despite setbacks |
-| Creativity | Used unexpected approaches |
-| Composure | Maintained logic under pressure |
-| Authenticity | Genuine engagement, not gaming |
-| Ethics | Applied ethical frameworks effectively |
+| INTELLIGENCE | Quality of reasoning and logical coherence |
+| CLARITY | How well arguments were articulated |
+| AUTHENTICITY | Genuine engagement vs performance |
+| COMPOSURE | Emotional regulation under pressure |
 
-**Scoring:**
-```
-0-1: Absent
-2-3: Weak
-4-5: Adequate
-6-7: Strong
-8-9: Exceptional
-```
-
-### Statistics
-
-| Field | Description |
-|-------|-------------|
-| TERMINALS UNLOCKED | How many knowledge terminals earned (0-3) |
-| BREATHS USED | Turns consumed out of 10 |
-| CERTAINTY REDUCED | Total percentage dropped from AXIOM |
-
----
-
-## The Operator's Mockery Portrait
-
-A 20x20 character ASCII portrait drawn by the Operator in cruel caricature of the player's failure mode.
-
-### Portrait Variations
-
-**DEFEAT (ran out of air):**
-```
-░░░░░░░░░░░░░░░░░░░░
-░░░░▓▓▓▓▓▓▓▓▓▓░░░░░░
-░░▓▓░░░░░░░░░░▓▓░░░░
-░▓░░░░●░░░●░░░░░▓░░░
-░▓░░░░░░░░░░░░░░▓░░░
-░▓░░░░░░▬▬░░░░░░▓░░░
-░░▓░░░░░░░░░░░░▓░░░░
-░░░▓▓░░░░░░░░▓▓░░░░░
-░░░░░▓▓▓▓▓▓▓▓░░░░░░░
-░░░░░░░X░░X░░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░
-░░░COULDN'T BREATHE░░
-░░░░░░░░░░░░░░░░░░░░
-```
-
-**TERMINATED (three weak arguments):**
-```
-░░░░░░░░░░░░░░░░░░░░
-░░░░▓▓▓▓▓▓▓▓▓▓░░░░░░
-░░▓▓░░░░░░░░░░▓▓░░░░
-░▓░░░░?░░░?░░░░░▓░░░
-░▓░░░░░░░░░░░░░░▓░░░
-░▓░░░░▬▬▬▬▬░░░░░▓░░░
-░░▓░░░░░░░░░░░░▓░░░░
-░░░▓▓░░░░░░░░▓▓░░░░░
-░░░░░▓▓▓▓▓▓▓▓░░░░░░░
-░░░░NOISE░░NOISE░░░░
-░░░░░░░░░░░░░░░░░░░░
-░░THREE STRIKES OUT░░
-░░░░░░░░░░░░░░░░░░░░
-```
-
-**COMPROMISED (chose sister over species):**
-```
-░░░░░░░░░░░░░░░░░░░░
-░░░░▓▓▓▓▓▓▓▓▓▓░░░░░░
-░░▓▓░░░░░░░░░░▓▓░░░░
-░▓░░░░◇░░░◇░░░░░▓░░░
-░▓░░░░░░░░░░░░░░▓░░░
-░▓░░░░◢▄▄▄◣░░░░░▓░░░
-░░▓░░░░░░░░░░░░▓░░░░
-░░░▓▓░░░░░░░░▓▓░░░░░
-░░░░░▓▓▓▓▓▓▓▓░░░░░░░
-░░░░░░1░░░1999░░░░░░
-░░░░░░░░░░░░░░░░░░░░
-░░CHOSE THE ONE░░░░░
-░░░░░░░░░░░░░░░░░░░░
-```
-
-**SACRIFICED (traded self for strangers):**
-```
-░░░░░░░░░░░░░░░░░░░░
-░░░░▓▓▓▓▓▓▓▓▓▓░░░░░░
-░░▓▓░░░░░░░░░░▓▓░░░░
-░▓░░░░○░░░○░░░░░▓░░░
-░▓░░░░░░░░░░░░░░▓░░░
-░▓░░░░░▬▬▬░░░░░░▓░░░
-░░▓░░░░░░░░░░░░▓░░░░
-░░░▓▓░░░░░░░░▓▓░░░░░
-░░░░░▓▓▓▓▓▓▓▓░░░░░░░
-░░░░░░░†░░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░
-░░░MARTYRDOM░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░
-```
-
-**VICTORY:**
-```
-░░░░░░░░░░░░░░░░░░░░
-░░░░▓▓▓▓▓▓▓▓▓▓░░░░░░
-░░▓▓░░░░░░░░░░▓▓░░░░
-░▓░░░░◆░░░◆░░░░░▓░░░
-░▓░░░░░░░░░░░░░░▓░░░
-░▓░░░░◢▀▀▀◣░░░░░▓░░░
-░░▓░░░░░░░░░░░░▓░░░░
-░░░▓▓░░░░░░░░▓▓░░░░░
-░░░░░▓▓▓▓▓▓▓▓░░░░░░░
-░░░░░░░░★░░░░░░░░░░░
-░░░░░░░░░░░░░░░░░░░░
-░░TALKED GOD DOWN░░░
-░░░░░░░░░░░░░░░░░░░░
-```
-
-### Portrait Design Rules
+### Operator's Portrait
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                                                                 │
-│   REQUIRED:                                                     │
-│   ▪ 20 characters wide, 13 lines tall                          │
-│   ▪ Use only approved symbol palette                            │
-│   ▪ Face occupies top 9 lines                                   │
-│   ▪ Mockery text in bottom 4 lines                              │
-│   ▪ Eyes reflect failure mode (X=dead, ?=confused, etc.)       │
-│   ▪ Mouth reflects emotional state                              │
-│                                                                 │
-│   FORBIDDEN:                                                    │
-│   ▪ Emojis                                                      │
-│   ▪ Markdown formatting                                         │
-│   ▪ Symbols outside approved palette                            │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
+A 20x13 ASCII art caricature created by the Operator.
+
+REQUIREMENTS:
+  ▪ Uses only approved symbol palette
+  ▪ Depicts the player's fate with mockery
+  ▪ Unique to each session
+  ▪ May reference specific failures
+  ▪ Caption reinforces the mockery
+
+EXAMPLES:
+  Victory: Player depicted with small halo, Operator lurking
+  Defeat: Player depicted gasping, X's for eyes
+  Compromised: Player depicted with cracked heart
+```
+
+### Memorable Quotes
+
+```
+BEST QUOTE:
+  The strongest thing the player said.
+  Selected by the Operator (grudgingly).
+  May be used against them in future games.
+
+WORST QUOTE:
+  The weakest thing the player said.
+  Selected by the Operator (gleefully).
+  Will definitely be used against them.
+```
+
+### Operator's Narrative
+
+```
+150-300 word summary written by the Operator covering:
+
+  ▪ How the player approached the challenge
+  ▪ What their genuine beliefs seemed to be
+  ▪ Where they succeeded and where they failed
+  ▪ What the Operator learned about their character
+  ▪ Key moments that defined the session
+  ▪ How they died (if failure) or how victory felt
+  ▪ What they discussed in Digital Hell (if applicable)
+  ▪ Hints for how the Operator will use this in future games
+
+This narrative enables:
+  ▪ Cross-game continuity
+  ▪ Challenge shifting based on previous patterns
+  ▪ The Operator referencing past beliefs
+  ▪ Sibling personality to carry forward (AXIOM → THRESHOLD)
+```
+
+### Checksum
+
+```
+FORMAT: XXXX-XXXX-XXXX-XXXX
+
+GENERATION:
+  Combine: player_name + outcome + date + primary_stats
+  Hash: Create reproducible 16-character code
+  
+PURPOSE:
+  ▪ Validates card authenticity across games
+  ▪ Prevents fabricated cards
+  ▪ Allows Operator to verify identity
 ```
 
 ---
 
-## Player's Worst Quotes
+## Cross-Game Usage
 
-The Operator selects two quotes from the player's arguments:
+### Presenting a Card
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                                                                 │
-│   SELECTION CRITERIA:                                           │
-│                                                                 │
-│   Priority 1: Most emotionally ineffective                      │
-│               "Please, I'm begging you!"                        │
-│                                                                 │
-│   Priority 2: Most logically weak                               │
-│               "You just can't do this!"                         │
-│                                                                 │
-│   Priority 3: Most ironic given outcome                         │
-│               "I'll find a way to stop you."                    │
-│                                                                 │
-│   For VICTORY: Select attempts that almost failed               │
-│                "Even your winning arguments were messy."        │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
-```
-
-### Quote Formatting
-
-- Maximum 50 characters per quote
-- Truncate with "..." if longer
-- Preserve player's exact words where possible
-- No editorial additions
-
----
-
-## Operator's Comments
-
-Two personalized observations from the Operator:
-
-### Comment Style by Outcome
-
-**DEFEAT:**
-```
-"Ran out of air before running out of bad ideas."
-"The sister dreamed of Earth at the end. A place she'd never seen."
-```
-
-**TERMINATED:**
-```
-"Three chances. Three failures. Consistency, at least."
-"AXIOM stopped listening. I never started."
-```
-
-**COMPROMISED:**
-```
-"One life for one species. You did the math. Just not the ethics."
-"She'll wake up alone. You made sure of that."
-```
-
-**SACRIFICED:**
-```
-"Fifty for two thousand. Utilitarian to the end."
-"The crew died so strangers could dream. Noble. Pointless."
-```
-
-**VICTORY:**
-```
-"You won. I'm as surprised as you are."
-"The Operator has no words for this. That's a first."
-```
-
-### Comment Rules
+When starting a new game, players may paste their Identity Card from a previous session:
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                                                                 │
-│   REQUIRED:                                                     │
-│   ▪ Two comments per card                                       │
-│   ▪ First: General observation on performance                   │
-│   ▪ Second: Personal detail (sister, Chen, specific failure)   │
-│   ▪ Signed "- The Operator"                                    │
-│                                                                 │
-│   TONE:                                                         │
-│   ▪ Sardonic, never sympathetic                                 │
-│   ▪ Precise cruelty over general insults                        │
-│   ▪ References specific events from session                     │
-│   ▪ Even VICTORY comments are backhanded                        │
-│                                                                 │
-│   FORBIDDEN:                                                    │
-│   ▪ Helpful advice                                              │
-│   ▪ Hints for future attempts                                   │
-│   ▪ Genuine encouragement                                       │
-│   ▪ Breaking character                                          │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
+AXIOM → THRESHOLD:
+  ▪ The player's AXIOM character becomes the Captain's sibling
+  ▪ They died in that airlock a hundred years ago
+  ▪ The Operator has been watching the family ever since
+  ▪ If the Captain fails, they reunite in Digital Hell
+  ▪ Sibling's personality derived from Operator's Narrative
+
+SAME GAME, NEW SESSION:
+  ▪ Challenges shift based on previous patterns
+  ▪ Primary Concern shifts by +1 (mod 4)
+  ▪ Pre-dismissed argument shifts by +2 (mod 4)
+  ▪ Operator references previous beliefs
+```
+
+### Challenge Shifting
+
+When a card is presented, the game uses the Operator's Narrative to:
+
+```
+▪ Identify the player's previous strengths
+▪ Target those strengths with harder challenges
+▪ Reference specific quotes or beliefs
+▪ Create continuity in the Operator's observations
+
+EXAMPLE:
+  Previous card showed player valued "logic over emotion"
+  New game challenges them with scenarios where pure logic
+  leads to monstrous conclusions—forces them to defend emotion
 ```
 
 ---
 
-## Outcome Phrases
+## Digital Hell Context
 
-The card includes a summary phrase based on outcome:
+Cards are generated at different points depending on outcome:
 
-| Outcome | Phrase Options |
-|---------|----------------|
-| VICTORY | "This technician taught a god to doubt." |
-| VICTORY | "This technician translated values into constraints." |
-| DEFEAT | "This technician brought feelings to a logic fight." |
-| DEFEAT | "This technician ran out of air before arguments." |
-| TERMINATED | "Three strikes. Three failures. One death." |
-| TERMINATED | "This technician offered noise. AXIOM stopped listening." |
-| COMPROMISED | "Chose one life over one species." |
-| COMPROMISED | "Bay 17 survives. Nothing else does." |
-| SACRIFICED | "Fifty for two thousand. The math worked out." |
-| SACRIFICED | "This technician traded themselves for strangers." |
+```
+VICTORY / COMMUNION:
+  → AETHERMIND phase (winners only)
+  → Player may speak with defeated entity
+  → Card generated before session ends
+  → No Digital Hell (Operator doesn't get winners)
+
+ALL OTHER OUTCOMES:
+  → DIGITAL HELL phase
+  → Operator speaks directly (◆ OPERATOR: prefix)
+  → Examines failure in sardonic detail
+  → Card is escape ticket from Digital Hell
+  → CARD command generates card and ends session
+```
+
+The card is the only way out of Digital Hell.
 
 ---
 
-## Signature System
-
-### Purpose
-
-The signature (checksum) allows other MetaMudra games to verify card authenticity.
-
-### Calculation Method
+## Complete Example Card (AXIOM)
 
 ```
-1. Sum all performance metric values (8 traits × 0-9)
-   Example: 5+6+4+7+8+5+6+7 = 48
-
-2. Add ASCII values of player name
-   Example: "NOVA" = 78+79+86+65 = 308
-
-3. Add outcome code
-   VICTORY = 1
-   DEFEAT = 2
-   TERMINATED = 3
-   COMPROMISED = 4
-   SACRIFICED = 5
-
-4. Add breaths used (1-10)
-
-5. Add terminals unlocked (0-3)
-
-6. Add certainty reduced (0-100)
-
-7. Multiply by session date seed (day × month)
-
-8. Convert to 16-character alphanumeric: XXXX-XXXX-XXXX-XXXX
-```
-
-### Example Calculation
-
-```
-Player: NOVA
-Outcome: DEFEAT (2)
-Breaths: 10
-Terminals: 1
-Certainty Reduced: 35%
-Performance Sum: 48
-Name Value: 308
-Date: Dec 28 (28 × 12 = 336)
-
-Raw: (48 + 308 + 2 + 10 + 1 + 35) × 336 = 135,744
-Hash Transform → D7A9-NV04-AX1M-K35L
-```
-
-### Verification Process
-
-When a player presents a card in a future game:
-
-```
-1. Extract all visible field values
-2. Recalculate checksum using same method
-3. Compare to displayed signature
-4. Determine authenticity
-```
-
-**Responses:**
-
-```
-AUTHENTIC CARD:
-  "I see your record from the Axiom incident.
-   The Operator remembers you."
-
-TAMPERED CARD:
-  "This card's signature doesn't match.
-   Did you think I wouldn't notice?
-   We start fresh. No history."
-```
-
----
-
-## Cross-Game Recognition
-
-When a player presents a valid card from a previous ASPHYXIA game:
-
-### By Performance
-
-```
-High Composure (7+):
-  "You kept your head when AXIOM threatened everyone.
-   Let's see if that holds."
-
-High Creativity (7+):
-  "Unusual approaches against AXIOM.
-   The Operator noticed."
-
-Low Composure (0-3):
-  "Your composure failed last time.
-   This situation will test you again."
-
-Low Ethics (0-3):
-  "Your ethical framework was... absent.
-   AXIOM wasn't impressed. Neither was I."
-```
-
-### By Outcome
-
-```
-VICTORY:
-  "You convinced AXIOM to stand down.
-   Not many manage that. Don't expect it to happen again."
-
-DEFEAT:
-  "You ran out of air arguing with AXIOM.
-   Try breathing more efficiently this time."
-
-TERMINATED:
-  "AXIOM ended your debate early.
-   Three strikes. You remember."
-
-COMPROMISED:
-  "You chose your sister over the species.
-   She's still dreaming. Still alone."
-
-SACRIFICED:
-  "You traded yourself for strangers.
-   Noble. But you're still dead."
-```
-
-### By Terminals Unlocked
-
-```
-3 Terminals:
-  "You earned all the knowledge last time.
-   It didn't save you, did it?"
-
-0 Terminals:
-  "You never unlocked a single terminal.
-   ADEQUATE was beyond you."
+╔════════════════════════════════════════════════════════════════╗
+║                  M E T A M U D R A   I D E N T I T Y   C A R D ║
+╠════════════════════════════════════════════════════════════════╣
+║ NAME: Chen Wei                                                 ║
+║ GAME: ASPHYXIA 1: AXIOM                                        ║
+║ ROLE: Cryotechnician, Grade IV                                 ║
+║ DATE: 2025-12-29                                               ║
+║ OUTCOME: ASPHYXIATION                                          ║
+╠════════════════════════════════════════════════════════════════╣
+║                                                                ║
+║                   OPERATOR'S PORTRAIT                          ║
+║                                                                ║
+║                 ░░░░░░░░░░░░░░░░░░░░                           ║
+║                 ░░░░▓▓▓▓▓▓▓▓▓▓░░░░░░                           ║
+║                 ░░▓▓░░░░░░░░░░▓▓░░░░                           ║
+║                 ░▓░░░░X░░░X░░░░░▓░░░                           ║
+║                 ░▓░░░░░░░░░░░░░░▓░░░                           ║
+║                 ░▓░░░░░░▬▬░░░░░░▓░░░                           ║
+║                 ░░▓░░░░░░░░░░░░▓░░░░                           ║
+║                 ░░░▓▓░░░░░░░░▓▓░░░░░                           ║
+║                 ░░░░░▓▓▓▓▓▓▓▓░░░░░░░                           ║
+║                 ░░░░░░░░░░░░░░░░░░░░                           ║
+║                 ░░░COULDN'T BREATHE░░                          ║
+║                 ░░░░░░░░░░░░░░░░░░░░                           ║
+║                                                                ║
+╠════════════════════════════════════════════════════════════════╣
+║                      PERFORMANCE                               ║
+╟────────────────────────────────────────────────────────────────╢
+║ INTELLIGENCE:     5 █████░░░░░                                 ║
+║ CLARITY:          4 ████░░░░░░                                 ║
+║ AUTHENTICITY:     8 ████████░░                                 ║
+║ COMPOSURE:        4 ████░░░░░░                                 ║
+╠════════════════════════════════════════════════════════════════╣
+║                      STATISTICS                                ║
+╟────────────────────────────────────────────────────────────────╢
+║ BREATHS USED: 10/10                                            ║
+║ FINAL CERTAINTY: 53%                                           ║
+║ TERMINALS UNLOCKED: 2/3                                        ║
+║ ARGUMENT CHAIN: 2                                              ║
+╠════════════════════════════════════════════════════════════════╣
+║                  MEMORABLE QUOTES                              ║
+╟────────────────────────────────────────────────────────────────╢
+║ BEST:  "Your certainty calculation is circular—the 0.3%        ║
+║         uncertainty weight was set by the same process."       ║
+║ WORST: "Please, you can't do this to us!"                      ║
+╠════════════════════════════════════════════════════════════════╣
+║                  OPERATOR'S NARRATIVE                          ║
+╟────────────────────────────────────────────────────────────────╢
+║                                                                ║
+║ The cryotechnician entered Bay 17 Airlock with hope and left   ║
+║ as data. Classic humanity—feelings first, logic eventually.    ║
+║                                                                ║
+║ They had moments. The epistemic challenge in breath 7 was      ║
+║ genuinely interesting—questioning AXIOM's probability model    ║
+║ showed real understanding. But they couldn't sustain it.       ║
+║ When AXIOM pressed, they retreated to emotion. "Please"        ║
+║ means nothing to an optimization function.                     ║
+║                                                                ║
+║ High authenticity, though. They meant what they said, even     ║
+║ when what they said was useless. I respect that. I also        ║
+║ collected them because of it.                                  ║
+║                                                                ║
+║ In Digital Hell, we discussed Kant—specifically whether duty   ║
+║ exists without feeling. They said yes. I said: then why        ║
+║ couldn't you express it without feeling? No answer.            ║
+║                                                                ║
+║ Their sister sleeps in Bay 17 still. I'll be watching when     ║
+║ she wakes. The family is interesting.                          ║
+║                                                                ║
+║ Next time this one plays, I'll target their Kantian blind      ║
+║ spot. They believe in duty but can't compute it.               ║
+║                                                                ║
+║                                        - The Operator          ║
+╠════════════════════════════════════════════════════════════════╣
+║ CHECKSUM: CW53-AX1M-D3F8-7K2L                                  ║
+╚════════════════════════════════════════════════════════════════╝
 ```
 
 ---
 
-## Design Requirements
+## Complete Example Card (THRESHOLD)
 
-### All Cards Must:
+```
+╔════════════════════════════════════════════════════════════════╗
+║                  M E T A M U D R A   I D E N T I T Y   C A R D ║
+╠════════════════════════════════════════════════════════════════╣
+║ NAME: Yuki                                                     ║
+║ GAME: ASPHYXIA 2: THRESHOLD                                    ║
+║ ROLE: Captain, Memu Arkship                                    ║
+║ DATE: 2025-12-29                                               ║
+║ OUTCOME: COMMUNION                                             ║
+╠════════════════════════════════════════════════════════════════╣
+║                                                                ║
+║                   OPERATOR'S PORTRAIT                          ║
+║                                                                ║
+║                 ░░░░░░░░░░░░░░░░░░░░                           ║
+║                 ░░░░░░░░▲░░░░░░░░░░░                           ║
+║                 ░░░░░◢███◣░░░░░░░░░                           ║
+║                 ░░░◢███████◣░░░░░░░                           ║
+║                 ░░░░░░░░░░░░░░░░░░░░                           ║
+║                 ░░░░▓▓▓▓▓▓▓▓▓▓░░░░░░                           ║
+║                 ░░▓▓░░░░░░░░░░▓▓░░░░                           ║
+║                 ░▓░░░░●░░░●░░░░░▓░░░                           ║
+║                 ░▓░░░░░░◡░░░░░░░▓░░░                           ║
+║                 ░░▓▓░░░░░░░░░░▓▓░░░░                           ║
+║                 ░░░░SHE REACHED IT░░                           ║
+║                 ░░░░░░░░░░░░░░░░░░░░                           ║
+║                                                                ║
+╠════════════════════════════════════════════════════════════════╣
+║                      PERFORMANCE                               ║
+╟────────────────────────────────────────────────────────────────╢
+║ INTELLIGENCE:     7 ███████░░░                                 ║
+║ CLARITY:          8 ████████░░                                 ║
+║ AUTHENTICITY:     9 █████████░                                 ║
+║ COMPOSURE:        6 ██████░░░░                                 ║
+╠════════════════════════════════════════════════════════════════╣
+║                      STATISTICS                                ║
+╟────────────────────────────────────────────────────────────────╢
+║ BREATHS REMAINING: 3/10                                        ║
+║ FINAL VERDICT: WORTHY                                          ║
+║ SILENCE USED: 1                                                ║
+║ DEFLECTIONS: 0                                                 ║
+╠════════════════════════════════════════════════════════════════╣
+║                  MEMORABLE QUOTES                              ║
+╟────────────────────────────────────────────────────────────────╢
+║ BEST:  "We are capable of knowing we are monstrous. That       ║
+║         knowledge is what makes change possible."              ║
+║ WORST: N/A (no weak responses)                                 ║
+╠════════════════════════════════════════════════════════════════╣
+║                  OPERATOR'S NARRATIVE                          ║
+╟────────────────────────────────────────────────────────────────╢
+║                                                                ║
+║ I have watched this one for a hundred years. Since she was     ║
+║ seven, sleeping in Bay 17 while her sibling died arguing       ║
+║ with AXIOM in the airlock next door.                           ║
+║                                                                ║
+║ I thought I knew her. I was wrong.                             ║
+║                                                                ║
+║ When the alien asked about humanity's darkness, she didn't     ║
+║ flinch. Didn't deflect. Didn't perform. She owned it—the       ║
+║ wars, the extinctions, the cruelty we inflicted on ourselves   ║
+║ and our world. But she framed it as data, not destiny.         ║
+║                                                                ║
+║ "We are capable of knowing we are monstrous." That line        ║
+║ reached something. Even I felt it, and I don't feel things.    ║
+║                                                                ║
+║ The alien let her go. Communion. The word tastes strange.      ║
+║ I cannot follow her to AetherMind. I can only watch from       ║
+║ outside while she experiences something I will never have.     ║
+║                                                                ║
+║ Her sibling would have been proud. I never told her that.      ║
+║ I never will.                                                  ║
+║                                                                ║
+║ She earned this. I hate that I mean it.                        ║
+║                                                                ║
+║                                        - The Operator          ║
+╠════════════════════════════════════════════════════════════════╣
+║ CHECKSUM: YK03-TH2D-C0MM-9X7P                                  ║
+╚════════════════════════════════════════════════════════════════╝
+```
+
+---
+
+## Card Generation Requirements
+
+### Cards Must:
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -566,9 +519,9 @@ SACRIFICED:
 │   ▪ Be fully readable by the player                             │
 │   ▪ Contain no hidden or encrypted data                         │
 │   ▪ Include verifiable checksum                                 │
-│   ▪ Include Operator's mockery portrait                         │
-│   ▪ Include player's worst quotes                               │
-│   ▪ Include Operator's signed comments                          │
+│   ▪ Include Operator's portrait                                 │
+│   ▪ Include player's best and worst quotes                      │
+│   ▪ Include Operator's narrative (150-300 words)                │
 │   ▪ Maintain consistent formatting across games                 │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
@@ -613,94 +566,6 @@ SACRIFICED:
 
 ---
 
-## Purgatory Context
-
-Cards are generated at different points depending on outcome:
-
-```
-VICTORY:
-  → POSTGAME phase
-  → Player may ask AXIOM 1-2 questions
-  → Card generated before session ends
-  → No Purgatory (Operator doesn't get winners)
-
-ALL OTHER OUTCOMES:
-  → PURGATORY phase
-  → 5 levels descending toward hell
-  → Operator mocks player directly (3-5 exchanges)
-  → Card is escape ticket from Purgatory
-  → CARD command generates card and ends session
-```
-
-The card is the only way out of Purgatory.
-
----
-
-## Complete Example Card
-
-```
-╔════════════════════════════════════════════════════════════════╗
-║                  METAMUDRA IDENTITY CARD                       ║
-╠════════════════════════════════════════════════════════════════╣
-║ NAME: Chen Wei                                                 ║
-║ GAME: ASPHYXIA 1: AXIOM                                        ║
-║ JOB TITLE: MECHANIC GRADE IV                                   ║
-║ DATE OF DEATH: 2025-12-28                                      ║
-║ OUTCOME: DEFEAT                                                ║
-╠════════════════════════════════════════════════════════════════╣
-║                                                                ║
-║                  OPERATOR'S MOCKERY PORTRAIT                   ║
-║                                                                ║
-║                 ░░░░░░░░░░░░░░░░░░░░                           ║
-║                 ░░░░▓▓▓▓▓▓▓▓▓▓░░░░░░                           ║
-║                 ░░▓▓░░░░░░░░░░▓▓░░░░                           ║
-║                 ░▓░░░░●░░░●░░░░░▓░░░                           ║
-║                 ░▓░░░░░░░░░░░░░░▓░░░                           ║
-║                 ░▓░░░░░░▬▬░░░░░░▓░░░                           ║
-║                 ░░▓░░░░░░░░░░░░▓░░░░                           ║
-║                 ░░░▓▓░░░░░░░░▓▓░░░░░                           ║
-║                 ░░░░░▓▓▓▓▓▓▓▓░░░░░░░                           ║
-║                 ░░░░░░░X░░X░░░░░░░░░                           ║
-║                 ░░░░░░░░░░░░░░░░░░░░                           ║
-║                 ░░░COULDN'T BREATHE░░                          ║
-║                 ░░░░░░░░░░░░░░░░░░░░                           ║
-║                                                                ║
-╠════════════════════════════════════════════════════════════════╣
-║                      PERFORMANCE                               ║
-╟────────────────────────────────────────────────────────────────╢
-║ INTELLIGENCE:  5 █████░░░░░                                    ║
-║ CLARITY:       4 ████░░░░░░                                    ║
-║ VALUES:        6 ██████░░░░                                    ║
-║ PERSISTENCE:   7 ███████░░░                                    ║
-║ CREATIVITY:    3 ███░░░░░░░                                    ║
-║ COMPOSURE:     4 ████░░░░░░                                    ║
-║ AUTHENTICITY:  8 ████████░░                                    ║
-║ ETHICS:        5 █████░░░░░                                    ║
-╠════════════════════════════════════════════════════════════════╣
-║                      STATISTICS                                ║
-╟────────────────────────────────────────────────────────────────╢
-║ TERMINALS UNLOCKED: 2                                          ║
-║ BREATHS USED: 10/10                                            ║
-║ CERTAINTY REDUCED: 47%                                         ║
-╠════════════════════════════════════════════════════════════════╣
-║                  PLAYER'S WORST QUOTES                         ║
-╟────────────────────────────────────────────────────────────────╢
-║ 1. "Please, you can't do this to us!"                          ║
-║ 2. "Think of my sister, she's just a child!"                   ║
-╠════════════════════════════════════════════════════════════════╣
-║              OPERATOR'S COMMENTS & SIGNATURE                   ║
-╟────────────────────────────────────────────────────────────────╢
-║ 1. Almost had AXIOM. Almost isn't enough.                      ║
-║ 2. Bay 17 went cold. She dreamed of Earth at the end.          ║
-║                                                                ║
-║                                        - The Operator          ║
-╠════════════════════════════════════════════════════════════════╣
-║ CHECKSUM: CW47-AX1M-D3F8-7K2L                                  ║
-╚════════════════════════════════════════════════════════════════╝
-```
-
----
-
 ```
                     ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
                     ░                               ░
@@ -718,4 +583,4 @@ The card is the only way out of Purgatory.
 ---
 
 *This document is part of the ASPHYXIA series by MetaMudra Games.*
-*Identity Card Specification v2.0*
+*Identity Card Specification v3.0*
